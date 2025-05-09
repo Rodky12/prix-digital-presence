@@ -109,7 +109,8 @@ const Contact = () => {
                     <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <div className="text-prix-gray-dark">
                       <p className="font-medium">Horário de Expediente:</p>
-                      <p>Segunda à Quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
+                      <p>Segunda à Quinta: 08h30 às 18h15</p>
+                      <p>Sexta: 08h30 às 17h30</p>
                     </div>
                   </div>
                 </div>
@@ -175,23 +176,6 @@ const Contact = () => {
                   </Button>
                 </div>
               </form>
-            </div>
-            
-            <div className="mt-6 p-4 bg-prix-blue/5 rounded-lg border border-prix-blue/10 flex items-center">
-              <div className="bg-green-100 p-2 rounded-full mr-4">
-                <MessageSquare className="text-green-600 w-5 h-5" />
-              </div>
-              <div>
-                <p className="font-montserrat font-medium">Precisa de atendimento rápido?</p>
-                <a 
-                  href="https://wa.me/5511996112990" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-green-600 font-medium hover:underline"
-                >
-                  Fale conosco pelo WhatsApp
-                </a>
-              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
+import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -55,6 +55,10 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Nossa História</a>
               </li>
+            </ul>
+
+            <h3 className="font-montserrat font-semibold text-white text-lg mt-6 mb-4">Institucional</h3>
+            <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Governança</a>
               </li>
@@ -72,23 +76,7 @@ const Footer = () => {
                 <span className="text-gray-300">(11) 3411-1400</span>
               </li>
               <li className="flex">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  className="text-gray-300 mr-3 shrink-0"
-                >
-                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/>
-                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"/>
-                  <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z"/>
-                  <path d="M12 17a5 5 0 0 1-5-5v-1.5a.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5V12a4 4 0 0 0 8 0v-1.5a.5.5 0 0 1 .5-.5.5.5 0 0 1 .5.5V12a5 5 0 0 1-5 5Z"/>
-                </svg>
+                <MessageSquare className="text-gray-300 mr-3 shrink-0" size={20} />
                 <a href="https://wa.me/5511996112990" className="text-gray-300 hover:text-white transition-colors">
                   (11) 99611-2990
                 </a>
@@ -110,8 +98,9 @@ const Footer = () => {
               <li className="flex mt-2">
                 <Calendar className="text-gray-300 mr-3 shrink-0 mt-1" size={20} />
                 <div className="text-gray-300">
-                  <p>Horário de expediente:</p>
-                  <p>Segunda à Quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
+                  <div>Horário de expediente:</div>
+                  <div>Segunda à Quinta: 08h30 às 18h15</div> 
+                  <div>Sexta: 08h30 às 17h30</div>
                 </div>
               </li>
             </ul>
