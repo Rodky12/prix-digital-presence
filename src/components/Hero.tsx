@@ -10,10 +10,10 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-prix-blue mb-4 leading-tight">
-              Soluções financeiras e imobiliárias com credibilidade
+              Excelência em serviços empresariais
             </h1>
             <p className="text-lg md:text-xl text-prix-gray-dark mb-8 max-w-xl">
-              O Grupo Prix oferece serviços de administração de imóveis comerciais e antecipação de recebíveis com excelência, transparência e compromisso.
+              Grupo empresarial que atua nos segmentos Imobiliário, Shopping Center e Fundo de Recebíveis (FIDC), com mais de 50 anos de experiência no mercado brasileiro.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <ScrollLink to="companies" smooth={true} offset={-80} duration={500}>

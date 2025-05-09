@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
+import { Building, PiggyBank, Users, ChartBar } from 'lucide-react';
 
 const Companies = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -42,15 +43,11 @@ const Companies = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="3" y1="9" x2="21" y2="9"></line>
-                  <line x1="9" y1="21" x2="9" y2="9"></line>
-                </svg>
+                <Building className="text-prix-blue w-6 h-6" />
               </div>
               <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">São Felipe Comercial S/A</h3>
               <p className="text-prix-gray-dark mb-4">
-                Com início das atividades em 1995, a São Felipe Comercial é responsável pela administração de diversos imóveis em todo o Brasil, incluindo:
+                Com início das atividades em 1995, a São Felipe Comercial é especializada em locação e administração imobiliária de diversos imóveis em todo o Brasil, incluindo:
               </p>
               
               <ul className="space-y-2 mb-6">
@@ -77,7 +74,7 @@ const Companies = () => {
               </ul>
               
               <p className="text-prix-gray-dark mb-6">
-                O foco da São Felipe é atuar nos centros de varejo de importantes cidades brasileiras, principalmente no estado de São Paulo.
+                O foco da São Felipe é atuar nos centros de varejo de importantes cidades brasileiras, principalmente no estado de São Paulo, oferecendo soluções imobiliárias de alto padrão.
               </p>
               
               <Button className="bg-prix-blue hover:bg-opacity-90 font-medium">
@@ -91,16 +88,7 @@ const Companies = () => {
                   <div className="p-1 bg-prix-blue"></div>
                   <div className="p-8">
                     <div className="h-48 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-prix-gray-medium">
-                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                        <path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
-                        <path d="M14 12h2"></path>
-                        <path d="M8 12H6"></path>
-                        <path d="M16 6V4"></path>
-                        <path d="M8 6V4"></path>
-                        <path d="M16 20v-2"></path>
-                        <path d="M8 20v-2"></path>
-                      </svg>
+                      <Building className="text-prix-gray-medium h-12 w-12" />
                     </div>
                     <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
                     <p className="text-sm text-prix-gray-dark">
@@ -121,11 +109,7 @@ const Companies = () => {
                   <div className="p-1 bg-prix-blue"></div>
                   <div className="p-8">
                     <div className="h-48 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-prix-gray-medium">
-                        <path d="M16 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2"></path>
-                        <rect width="8" height="12" x="16" y="4" rx="2" transform="rotate(90 16 4)"></rect>
-                        <path d="M22 18h-4"></path>
-                      </svg>
+                      <ChartBar className="text-prix-gray-medium h-12 w-12" />
                     </div>
                     <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Tecnologia à serviço do cliente</h4>
                     <p className="text-sm text-prix-gray-dark">
@@ -137,12 +121,7 @@ const Companies = () => {
             </div>
             <div className="order-1">
               <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="m16 8-8 8"></path>
-                  <path d="M8.5 8.5a1 1 0 1 0 2 0 1 1 0 1 0-2 0"></path>
-                  <path d="M14.5 13.5a1 1 0 1 0 2 0 1 1 0 1 0-2 0"></path>
-                </svg>
+                <PiggyBank className="text-prix-blue w-6 h-6" />
               </div>
               <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo - FIDC</h3>
               <p className="text-prix-gray-dark mb-4">
@@ -150,36 +129,24 @@ const Companies = () => {
               </p>
               
               <p className="text-prix-gray-dark mb-6">
-                Atuamos principalmente na compra de duplicatas mercantis e de serviços, originadas da venda a prazo de empresas do segmento "Middle Market". Nossas taxas de crédito são bastante competitivas e nos destacamos pela:
+                Oferecemos soluções financeiras especializadas, atuando principalmente na compra de duplicatas mercantis e de serviços, originadas da venda a prazo de empresas do segmento "Middle Market". Nossas taxas de crédito são bastante competitivas e nos destacamos pela:
               </p>
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
+                  <Users className="text-prix-blue w-5 h-5 mr-3" />
                   <span className="text-prix-gray-dark font-medium">Transparência</span>
                 </div>
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
+                  <Building className="text-prix-blue w-5 h-5 mr-3" />
                   <span className="text-prix-gray-dark font-medium">Compromisso</span>
                 </div>
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
+                  <ChartBar className="text-prix-blue w-5 h-5 mr-3" />
                   <span className="text-prix-gray-dark font-medium">Seriedade</span>
                 </div>
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
+                  <PiggyBank className="text-prix-blue w-5 h-5 mr-3" />
                   <span className="text-prix-gray-dark font-medium">Tecnologia</span>
                 </div>
               </div>

@@ -111,10 +111,13 @@
 /* Custom animations */
 .animate-on-scroll {
   opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .animate-on-scroll.animate {
-  @apply animate-fade-in;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Smooth scroll */
@@ -122,3 +125,48 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Define cores específicas do Prix */
+:root {
+  --prix-blue: #003366;
+  --prix-gray-dark: #444;
+  --prix-gray-medium: #777;
+  --prix-gray-light: #eee;
+}
+
+@layer utilities {
+  .text-prix-blue {
+    color: var(--prix-blue);
+  }
+
+  .bg-prix-blue {
+    background-color: var(--prix-blue);
+  }
+
+  .text-prix-gray-dark {
+    color: var(--prix-gray-dark);
+  }
+
+  .text-prix-gray-medium {
+    color: var(--prix-gray-medium);
+  }
+
+  .bg-prix-gray-light {
+    background-color: var(--prix-gray-light);
+  }
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}

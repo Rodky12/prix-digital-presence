@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
+import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -56,30 +57,20 @@ const Contact = () => {
                 <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nosso Endereço</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3 mt-1">
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
+                    <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       Av. Paulista, 1000, Bela Vista<br />
                       São Paulo - SP, 01310-100
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3 mt-1">
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
+                    <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       (11) 3322-1000
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3 mt-1">
-                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14l4 4v12Z"></path>
-                      <path d="M16 8h-5"></path>
-                      <path d="M15 12H9"></path>
-                      <path d="M14 16h-3"></path>
-                    </svg>
+                    <Mail className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       <a href="mailto:contato@grupoprix.com.br" className="hover:text-prix-blue transition-colors">
                         contato@grupoprix.com.br
@@ -87,12 +78,7 @@ const Contact = () => {
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue mr-3 mt-1">
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                      <line x1="16" y1="2" x2="16" y2="6"></line>
-                      <line x1="8" y1="2" x2="8" y2="6"></line>
-                      <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
+                    <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <div className="text-prix-gray-dark">
                       <p className="font-medium">Horário de Funcionamento:</p>
                       <p>Segunda a Sexta: 09h às 18h</p>
@@ -153,11 +139,7 @@ const Contact = () => {
             
             <div className="mt-6 p-4 bg-prix-blue/5 rounded-lg border border-prix-blue/10 flex items-center">
               <div className="bg-green-100 p-2 rounded-full mr-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-600">
-                  <path d="M6 18c0 .6.4 1 1 1h10c.6 0 1-.4 1-1v-3H6v3z"></path>
-                  <path d="M16 13v-3h5l-1.4-5c-.2-.6-.8-1-1.4-1H6c-.5 0-1.2.4-1.4 1L3 10h5v3"></path>
-                  <path d="M14 13V7c0-1.1-.9-2-2-2s-2 .9-2 2v6"></path>
-                </svg>
+                <MessageSquare className="text-green-600 w-5 h-5" />
               </div>
               <div>
                 <p className="font-montserrat font-medium">Precisa de atendimento rápido?</p>

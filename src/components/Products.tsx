@@ -1,6 +1,14 @@
 
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
+import { 
+  Banknote, 
+  FileText, 
+  HandCoins, 
+  PiggyBank, 
+  Globe, 
+  ShieldCheck 
+} from 'lucide-react';
 
 const ProductCard = ({
   icon,
@@ -53,68 +61,32 @@ const Products = () => {
 
   const products = [
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-          <line x1="2" y1="10" x2="22" y2="10"></line>
-        </svg>
-      ),
+      icon: <Banknote className="text-prix-blue w-6 h-6" />,
       title: "Antecipação de recebíveis",
       description: "Antecipe seus recebimentos de vendas a prazo, melhorando seu fluxo de caixa e permitindo novos investimentos."
     },
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <path d="M16 2v5h5"></path>
-          <path d="M21 6v6.5c0 .8-.7 1.5-1.5 1.5h-7c-.8 0-1.5-.7-1.5-1.5v-9c0-.8.7-1.5 1.5-1.5H17l4 4z"></path>
-          <path d="M7 8v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H15"></path>
-          <path d="M3 12v8.8c0 .3.2.6.4.8.2.2.5.4.8.4H11"></path>
-        </svg>
-      ),
+      icon: <HandCoins className="text-prix-blue w-6 h-6" />,
       title: "Fomento a Produção",
       description: "Incentivo financeiro para impulsionar a produção empresarial, oferecendo recursos para aumentar a capacidade produtiva."
     },
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <rect width="20" height="12" x="2" y="6" rx="2"></rect>
-          <circle cx="12" cy="12" r="2"></circle>
-          <path d="M6 12h.01M18 12h.01"></path>
-        </svg>
-      ),
+      icon: <FileText className="text-prix-blue w-6 h-6" />,
       title: "CCB e Nota comercial",
       description: "Emissão de Cédulas de Crédito Bancário e Notas Comerciais para captação de recursos junto a investidores qualificados."
     },
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <circle cx="12" cy="12" r="10"></circle>
-          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-          <path d="M2 12h20"></path>
-        </svg>
-      ),
+      icon: <PiggyBank className="text-prix-blue w-6 h-6" />,
       title: "Capital de Giro",
       description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e contas."
     },
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
-          <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
-          <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path>
-        </svg>
-      ),
+      icon: <HandCoins className="text-prix-blue w-6 h-6" />,
       title: "Cheque Prix",
       description: "Solução financeira para antecipar recebimentos de cheques pré-datados, proporcionando liquidez imediata para sua empresa."
     },
     {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-prix-blue">
-          <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
-          <line x1="3" y1="9" x2="21" y2="9"></line>
-          <path d="m9 16 3-3 3 3"></path>
-        </svg>
-      ),
+      icon: <ShieldCheck className="text-prix-blue w-6 h-6" />,
       title: "Conta Escrow",
       description: "Conta garantia que aumenta a segurança em operações financeiras, servindo como intermediária entre as partes envolvidas."
     },
