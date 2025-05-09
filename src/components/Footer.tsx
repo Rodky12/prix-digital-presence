@@ -42,10 +42,13 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mb-4">Empresas</h3>
             <ul className="space-y-3">
               <li>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">Múltiplo FIDC</a>
+              </li>
+              <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">São Felipe Comercial</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Múltiplo FIDC</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">Magazine Pelicano</a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Nossa História</a>
@@ -66,7 +69,15 @@ const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                <span className="text-gray-300">(11) 3322-1000</span>
+                <span className="text-gray-300">(11) 3411-1400</span>
+              </li>
+              <li className="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <a href="https://wa.me/5511996112990" className="text-gray-300 hover:text-white transition-colors">
+                  WhatsApp: (11) 99611-2990
+                </a>
               </li>
               <li className="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
@@ -77,21 +88,29 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-                <a href="https://wa.me/5511933221000" className="text-gray-300 hover:text-white transition-colors">
-                  WhatsApp: (11) 93322-1000
-                </a>
-              </li>
-              <li className="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span className="text-gray-300">
-                  Av. Paulista, 1000, Bela Vista<br />
-                  São Paulo - SP, 01310-100
-                </span>
+                <div className="text-gray-300">
+                  <p>
+                    Avenida Paulista, 460 - 13º Andar<br />
+                    Bela Vista - São Paulo - SP<br />
+                    CEP 01310-904
+                  </p>
+                </div>
+              </li>
+              <li className="flex mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <div className="text-gray-300">
+                  <p>Horário de expediente:</p>
+                  <p>Segunda à Quinta: 08h30 às 18h15</p>
+                  <p>Sexta-feira: 08h30 às 17h30</p>
+                </div>
               </li>
             </ul>
           </div>

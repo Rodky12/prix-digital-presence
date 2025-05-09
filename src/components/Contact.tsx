@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976000344805!2d-46.65410742376747!3d-23.565639178429584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7eb352091%3A0x2a296f4170f7d3e1!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976000344805!2d-46.65410742376747!3d-23.565639178429584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7eb352091%3A0x2a296f4170f7d3e1!2sAv.%20Paulista%2C%20460%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-904!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -59,14 +59,15 @@ const Contact = () => {
                   <div className="flex items-start">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
-                      Av. Paulista, 1000, Bela Vista<br />
-                      São Paulo - SP, 01310-100
+                      Avenida Paulista, 460 - 13º Andar<br />
+                      Bela Vista - São Paulo - SP<br />
+                      CEP 01310-904
                     </p>
                   </div>
                   <div className="flex items-start">
                     <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
-                      (11) 3322-1000
+                      (11) 3411-1400
                     </p>
                   </div>
                   <div className="flex items-start">
@@ -80,8 +81,9 @@ const Contact = () => {
                   <div className="flex items-start">
                     <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <div className="text-prix-gray-dark">
-                      <p className="font-medium">Horário de Funcionamento:</p>
-                      <p>Segunda a Sexta: 09h às 18h</p>
+                      <p className="font-medium">Horário de Expediente:</p>
+                      <p>Segunda à Quinta: 08h30 às 18h15</p>
+                      <p>Sexta-feira: 08h30 às 17h30</p>
                     </div>
                   </div>
                 </div>
@@ -144,7 +146,7 @@ const Contact = () => {
               <div>
                 <p className="font-montserrat font-medium">Precisa de atendimento rápido?</p>
                 <a 
-                  href="https://wa.me/5511933221000" 
+                  href="https://wa.me/5511996112990" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-green-600 font-medium hover:underline"

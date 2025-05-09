@@ -39,9 +39,81 @@ const Companies = () => {
         </div>
 
         <div ref={sectionRef} className="animate-on-scroll space-y-16">
-          {/* São Felipe */}
+          {/* Múltiplo FIDC */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="order-2 md:order-1">
+              <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
+                <PiggyBank className="text-prix-blue w-6 h-6" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo - FIDC</h3>
+              <p className="text-prix-gray-dark mb-4">
+                O Múltiplo - FIDC (Fundo de Investimento em Direitos Creditórios Não-Padronizados Multissetorial) foi constituído pelo grupo em 2005 com a experiência de mais de 20 anos no ramo de Factoring.
+              </p>
+              
+              <p className="text-prix-gray-dark mb-6">
+                Oferecemos soluções financeiras especializadas, atuando principalmente na compra de duplicatas mercantis e de serviços, originadas da venda a prazo de empresas do segmento "Middle Market". Nossas taxas de crédito são bastante competitivas e nos destacamos pela:
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
+                  <Users className="text-prix-blue w-5 h-5 mr-3" />
+                  <span className="text-prix-gray-dark font-medium">Transparência</span>
+                </div>
+                <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
+                  <Building className="text-prix-blue w-5 h-5 mr-3" />
+                  <span className="text-prix-gray-dark font-medium">Compromisso</span>
+                </div>
+                <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
+                  <ChartBar className="text-prix-blue w-5 h-5 mr-3" />
+                  <span className="text-prix-gray-dark font-medium">Seriedade</span>
+                </div>
+                <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
+                  <PiggyBank className="text-prix-blue w-5 h-5 mr-3" />
+                  <span className="text-prix-gray-dark font-medium">Tecnologia</span>
+                </div>
+              </div>
+              
+              <Button className="bg-prix-blue hover:bg-opacity-90 font-medium">
+                Conheça nossos produtos
+              </Button>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="relative">
+                <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
+                <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
+                  <img 
+                    src="/lovable-uploads/ea7e2e3e-7ff9-4a98-872e-64cfe6b89e87.png" 
+                    alt="Múltiplo FIDC" 
+                    className="w-full h-auto mb-6"
+                  />
+                  <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Tecnologia à serviço do cliente</h4>
+                  <p className="text-sm text-prix-gray-dark">
+                    Com uma informática de ponta, nosso setor de TI mantém constantes investimentos em Software e Hardware, permitindo ao nosso cliente acesso On-Line ao sistema operacional do FIDC.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* São Felipe */}
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="order-2">
+              <div className="relative">
+                <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
+                <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
+                  <img 
+                    src="/lovable-uploads/d6d89c29-3bf1-4d4d-9df0-5d5c09c0aec6.png" 
+                    alt="São Felipe Comercial" 
+                    className="w-full h-auto mb-6"
+                  />
+                  <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
+                  <p className="text-sm text-prix-gray-dark">
+                    Gerenciamento eficiente de propriedades comerciais em localizações estratégicas para maximizar o retorno sobre o investimento.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="order-1">
               <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
                 <Building className="text-prix-blue w-6 h-6" />
               </div>
@@ -81,79 +153,54 @@ const Companies = () => {
                 Saiba mais
               </Button>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="relative">
-                <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
-                <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100">
-                  <div className="p-1 bg-prix-blue"></div>
-                  <div className="p-8">
-                    <div className="h-48 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                      <Building className="text-prix-gray-medium h-12 w-12" />
-                    </div>
-                    <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
-                    <p className="text-sm text-prix-gray-dark">
-                      Gerenciamento eficiente de propriedades comerciais em localizações estratégicas para maximizar o retorno sobre o investimento.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* Múltiplo FIDC */}
+          {/* Magazine Pelicano */}
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="order-2">
-              <div className="relative">
-                <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
-                <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100">
-                  <div className="p-1 bg-prix-blue"></div>
-                  <div className="p-8">
-                    <div className="h-48 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                      <ChartBar className="text-prix-gray-medium h-12 w-12" />
-                    </div>
-                    <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Tecnologia à serviço do cliente</h4>
-                    <p className="text-sm text-prix-gray-dark">
-                      Com uma informática de ponta, nosso setor de TI mantém constantes investimentos em Software e Hardware, permitindo ao nosso cliente acesso On-Line ao sistema operacional do FIDC.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="order-1">
+            <div className="order-2 md:order-1">
               <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                <PiggyBank className="text-prix-blue w-6 h-6" />
+                <Building className="text-prix-blue w-6 h-6" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo - FIDC</h3>
+              <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Magazine Pelicano</h3>
               <p className="text-prix-gray-dark mb-4">
-                O Múltiplo - FIDC (Fundo de Investimento em Direitos Creditórios Não-Padronizados Multissetorial) foi constituído pelo grupo em 2005 com a experiência de mais de 20 anos no ramo de Factoring.
+                Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias. Revolucionou este mercado atingindo a marca de mais de 150 filiais distribuídas por todo o Brasil com mais de 3.000 colaboradores.
               </p>
               
               <p className="text-prix-gray-dark mb-6">
-                Oferecemos soluções financeiras especializadas, atuando principalmente na compra de duplicatas mercantis e de serviços, originadas da venda a prazo de empresas do segmento "Middle Market". Nossas taxas de crédito são bastante competitivas e nos destacamos pela:
+                Foi o início das atividades empresariais do grupo, e posteriormente deu origem às duas empresas que compõem o Grupo Prix atualmente: a São Felipe Comercial e o Múltiplo FIDC.
               </p>
               
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <Users className="text-prix-blue w-5 h-5 mr-3" />
-                  <span className="text-prix-gray-dark font-medium">Transparência</span>
+                  <span className="text-prix-gray-dark font-medium">Pioneirismo</span>
                 </div>
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <Building className="text-prix-blue w-5 h-5 mr-3" />
-                  <span className="text-prix-gray-dark font-medium">Compromisso</span>
+                  <span className="text-prix-gray-dark font-medium">Inovação</span>
                 </div>
                 <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <ChartBar className="text-prix-blue w-5 h-5 mr-3" />
-                  <span className="text-prix-gray-dark font-medium">Seriedade</span>
-                </div>
-                <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                  <PiggyBank className="text-prix-blue w-5 h-5 mr-3" />
-                  <span className="text-prix-gray-dark font-medium">Tecnologia</span>
+                  <span className="text-prix-gray-dark font-medium">Tradição</span>
                 </div>
               </div>
               
               <Button className="bg-prix-blue hover:bg-opacity-90 font-medium">
-                Conheça nossos produtos
+                Nossa História
               </Button>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="relative">
+                <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-3"></div>
+                <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
+                  <img 
+                    src="/lovable-uploads/d2e93879-9fd9-4617-a889-5c13c9f23f44.png" 
+                    alt="Magazine Pelicano" 
+                    className="w-full h-auto mb-6"
+                  />
+                  <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Origem do Grupo Prix</h4>
+                  <p className="text-sm text-prix-gray-dark">
+                    O Magazine Pelicano foi o início de uma jornada empresarial que hoje se consolida no Grupo Prix, com empresas atuando nos segmentos Imobiliário e de Investimentos em Direitos Creditórios.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
