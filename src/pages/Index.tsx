@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import History from "@/components/History";
+import Companies from "@/components/Companies";
+import Products from "@/components/Products";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach((element) => {
+        const position = element.getBoundingClientRect();
+        // If element is in viewport
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+          element.classList.add('animate');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    // Call once on mount to check for elements already in view
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <History />
+      <Companies />
+      <Products />
+      <Contact />
+      <Footer />
     </div>
   );
 };
