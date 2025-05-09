@@ -1,10 +1,37 @@
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
+import { toast } from '@/components/ui/use-toast';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Here you would normally send the form data to your backend
+    
+    // For demo purposes, just show a success toast
+    toast({
+      title: "Mensagem enviada!",
+      description: "Entraremos em contato em breve.",
+    });
+    
+    // Clear form
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -82,8 +109,7 @@ const Contact = () => {
                     <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <div className="text-prix-gray-dark">
                       <p className="font-medium">Horário de Expediente:</p>
-                      <p>Segunda à Quinta: 08h30 às 18h15</p>
-                      <p>Sexta-feira: 08h30 às 17h30</p>
+                      <p>Segunda à Quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
                     </div>
                   </div>
                 </div>
@@ -94,7 +120,7 @@ const Contact = () => {
           <div>
             <div className="bg-prix-blue/5 p-8 rounded-lg border border-prix-blue/10">
               <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-6">Entre em contato</h3>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-prix-gray-dark mb-1">Nome</label>
                   <input
@@ -102,6 +128,9 @@ const Contact = () => {
                     id="name"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
                     placeholder="Seu nome completo"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
                 <div>
@@ -111,6 +140,9 @@ const Contact = () => {
                     id="email"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
                     placeholder="seu@email.com"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
                 <div>
@@ -120,6 +152,9 @@ const Contact = () => {
                     id="phone"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
                     placeholder="(00) 00000-0000"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
                 <div>
@@ -129,10 +164,13 @@ const Contact = () => {
                     rows={4}
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
                     placeholder="Como podemos ajudar?"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
                   ></textarea>
                 </div>
                 <div className="mt-6">
-                  <Button className="w-full bg-prix-blue hover:bg-opacity-90 font-medium py-6 text-base">
+                  <Button type="submit" className="w-full bg-prix-blue hover:bg-opacity-90 font-medium py-6 text-base">
                     Enviar mensagem
                   </Button>
                 </div>
