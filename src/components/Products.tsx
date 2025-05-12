@@ -85,6 +85,7 @@ const Products = () => {
     };
   }, []);
 
+  // Custom Capital de Giro Icon with dollar sign and arrows
   const CapitalGiroIcon = () => (
     <svg 
       width="24" 
@@ -97,15 +98,15 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 6v12" />
-      <path d="M8 12h8" />
-      <path d="m16 8-4 4 4 4" />
-      <path d="m8 8 4 4-4 4" />
-      <path d="M12 6a6 6 0 0 1 0 12" />
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 7v10" />
+      <path d="M9 10h6" />
+      <path d="m16 16-4-4 4-4" />
+      <path d="m8 16 4-4-4-4" />
     </svg>
   );
 
+  // Custom Cheque Icon
   const ChequeIcon = () => (
     <svg 
       width="24" 
@@ -120,10 +121,9 @@ const Products = () => {
     >
       <rect x="3" y="5" width="18" height="14" rx="2" />
       <line x1="3" y1="10" x2="21" y2="10" />
-      <path d="M7 15h2" />
-      <path d="M11 15h6" />
-      <path d="m18 5-6 6" />
-      <path d="m18 5-4 1-2 5" />
+      <line x1="7" y1="15" x2="11" y2="15" />
+      <line x1="14" y1="15" x2="17" y2="15" />
+      <path d="M7 5v3" />
     </svg>
   );
 

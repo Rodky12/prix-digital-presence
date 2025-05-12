@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { Building, PiggyBank, Users, ChartBar } from 'lucide-react';
+import { Building2, CircleDollarSign, Users, ChartBar, Store } from 'lucide-react';
 
 const CompanySection = ({ 
   children, 
@@ -87,9 +87,9 @@ const Companies = () => {
           {/* Múltiplo FIDC */}
           <CompanySection delay={100}>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                  <PiggyBank className="text-prix-blue w-6 h-6" />
+                  <CircleDollarSign className="text-prix-blue w-6 h-6" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo - FIDC</h3>
                 <p className="text-prix-gray-dark mb-4">
@@ -106,7 +106,7 @@ const Companies = () => {
                     <span className="text-prix-gray-dark font-medium">Transparência</span>
                   </div>
                   <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                    <Building className="text-prix-blue w-5 h-5 mr-3" />
+                    <Building2 className="text-prix-blue w-5 h-5 mr-3" />
                     <span className="text-prix-gray-dark font-medium">Compromisso</span>
                   </div>
                   <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
@@ -114,7 +114,7 @@ const Companies = () => {
                     <span className="text-prix-gray-dark font-medium">Seriedade</span>
                   </div>
                   <div className="flex items-center p-3 bg-prix-blue/5 rounded-lg">
-                    <PiggyBank className="text-prix-blue w-5 h-5 mr-3" />
+                    <CircleDollarSign className="text-prix-blue w-5 h-5 mr-3" />
                     <span className="text-prix-gray-dark font-medium">Tecnologia</span>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Companies = () => {
                   Conheça nossos produtos
                 </Button>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2 mt-8 md:mt-0">
                 <div className="relative">
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
@@ -145,7 +145,7 @@ const Companies = () => {
           {/* São Felipe */}
           <CompanySection isReversed={true} delay={300}>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <div className="order-2">
+              <div className="order-2 mt-8 md:mt-0">
                 <div className="relative">
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
@@ -163,7 +163,7 @@ const Companies = () => {
               </div>
               <div className="order-1">
                 <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                  <Building className="text-prix-blue w-6 h-6" />
+                  <Building2 className="text-prix-blue w-6 h-6" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">São Felipe Comercial S/A</h3>
                 <p className="text-prix-gray-dark mb-4">
@@ -207,9 +207,9 @@ const Companies = () => {
           {/* Magazine Pelicano */}
           <CompanySection delay={500}>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <div className="inline-flex items-center justify-center p-2 bg-prix-blue/10 rounded-lg mb-4">
-                  <Building className="text-prix-blue w-6 h-6" />
+                  <Store className="text-prix-blue w-6 h-6" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Magazine Pelicano</h3>
                 <p className="text-prix-gray-dark mb-4">
@@ -236,7 +236,7 @@ const Companies = () => {
                   Nossa História
                 </Button>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2 mt-8 md:mt-0">
                 <div className="relative">
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-3"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
