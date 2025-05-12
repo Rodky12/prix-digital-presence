@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
+import { MapPin, Mail, Calendar, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img 
-              src="/lovable-uploads/8d6a373d-335c-4f5e-b652-d87676af30cc.png" 
+              src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
               alt="Grupo Prix" 
-              className="h-14 mb-4 brightness-0 invert"
+              className="h-14 mb-4"
             />
             <p className="text-gray-300 mb-4">
               Oferecendo soluções em administração imobiliária e antecipação de recebíveis com excelência e compromisso.
@@ -72,7 +72,9 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mb-4">Contato</h3>
             <ul className="space-y-3">
               <li className="flex">
-                <Phone className="text-gray-300 mr-3 shrink-0" size={20} />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-300 mr-3 shrink-0">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
                 <span className="text-gray-300">(11) 3411-1400</span>
               </li>
               <li className="flex">

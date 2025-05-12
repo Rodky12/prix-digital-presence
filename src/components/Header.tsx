@@ -35,14 +35,12 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md py-2`}
     >
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/8d6a373d-335c-4f5e-b652-d87676af30cc.png" 
+            src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
             alt="Grupo Prix" 
             className="h-12 md:h-14"
           />
@@ -58,9 +56,7 @@ const Header = () => {
               smooth={true}
               offset={-80}
               duration={500}
-              className={`font-montserrat text-sm font-medium cursor-pointer transition-colors hover:text-prix-blue ${
-                isScrolled ? 'text-prix-gray-dark' : 'text-prix-blue'
-              }`}
+              className="font-montserrat text-sm font-medium cursor-pointer transition-colors hover:text-prix-blue text-prix-gray-dark"
             >
               {link.name}
             </Link>

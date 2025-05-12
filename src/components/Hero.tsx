@@ -23,7 +23,7 @@ const Hero = () => {
                 </Button>
               </ScrollLink>
               <ScrollLink to="products" smooth={true} offset={-80} duration={500}>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10 font-medium px-6 py-6 text-base">
+                <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
                   Nossos produtos <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </ScrollLink>
@@ -31,9 +31,9 @@ const Hero = () => {
           </div>
           <div className="hidden md:flex justify-center items-center">
             <img 
-              src="/lovable-uploads/8d6a373d-335c-4f5e-b652-d87676af30cc.png" 
+              src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
               alt="Grupo Prix Logo" 
-              className="w-auto h-32 brightness-0 invert"
+              className="w-auto h-32"
             />
           </div>
         </div>
