@@ -15,7 +15,7 @@ const Index = () => {
       elements.forEach((element) => {
         const position = element.getBoundingClientRect();
         // If element is in viewport
-        if (position.top < window.innerHeight && position.bottom >= 0) {
+        if (position.top < window.innerHeight * 0.85 && position.bottom >= 0) {
           element.classList.add('animate');
         }
       });

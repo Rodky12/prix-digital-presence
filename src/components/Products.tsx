@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -20,10 +21,36 @@ const ProductCard = ({
   description: string;
   delay?: number;
 }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('animate');
+          }, delay);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, [delay]);
+
   return (
     <div 
-      className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100"
-      style={{ animationDelay: `${delay}ms` }}
+      ref={cardRef}
+      className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 opacity-0 translate-y-10 transition-all duration-700 ease-out"
+      style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="w-14 h-14 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
         {icon}
@@ -70,11 +97,12 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="10" />
       <path d="M12 6v12" />
       <path d="M8 12h8" />
-      <path d="M17 18l2-2-2-2" />
-      <path d="M7 6l-2 2 2 2" />
+      <path d="m16 8-4 4 4 4" />
+      <path d="m8 8 4 4-4 4" />
+      <path d="M12 6a6 6 0 0 1 0 12" />
     </svg>
   );
 
@@ -92,7 +120,10 @@ const Products = () => {
     >
       <rect x="3" y="5" width="18" height="14" rx="2" />
       <line x1="3" y1="10" x2="21" y2="10" />
-      <path d="m7 15 3 3 7-7" />
+      <path d="M7 15h2" />
+      <path d="M11 15h6" />
+      <path d="m18 5-6 6" />
+      <path d="m18 5-4 1-2 5" />
     </svg>
   );
 
@@ -132,7 +163,7 @@ const Products = () => {
   return (
     <section id="products" className="section bg-gray-50">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
@@ -140,19 +171,19 @@ const Products = () => {
           </p>
         </div>
 
-        <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div ref={sectionRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
             <ProductCard 
               key={index}
               icon={product.icon}
               title={product.title}
               description={product.description}
-              delay={index * 100}
+              delay={index * 150}
             />
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll" style={{ transitionDelay: '800ms' }}>
           <Button 
             className="bg-prix-blue hover:bg-opacity-90 font-medium px-8 py-6 text-base"
             onClick={() => window.open('https://cliente.grupoprix.com.br', '_blank')}
