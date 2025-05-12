@@ -1,4 +1,3 @@
-
 import { MapPin, Mail, Calendar, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
@@ -9,13 +8,11 @@ const Footer = () => {
       <div className="container">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="bg-white p-2 inline-block rounded-md mb-4">
-              <img 
-                src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
-                alt="Grupo Prix" 
-                className="h-12"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
+              alt="Grupo Prix" 
+              className="h-14 mb-4 filter brightness-0 invert"
+            />
             <p className="text-gray-300 mb-4">
               Oferecendo soluções em administração imobiliária e antecipação de recebíveis com excelência e compromisso.
             </p>

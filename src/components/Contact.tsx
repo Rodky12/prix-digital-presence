@@ -98,6 +98,14 @@ const Contact = () => {
                     </p>
                   </div>
                   <div className="flex items-start">
+                    <MessageSquare className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                    <p className="text-prix-gray-dark">
+                      <a href="https://wa.me/5511996112990" className="hover:text-prix-blue transition-colors">
+                        WhatsApp: (11) 99611-2990
+                      </a>
+                    </p>
+                  </div>
+                  <div className="flex items-start">
                     <Mail className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       <a href="mailto:contato@grupoprix.com.br" className="hover:text-prix-blue transition-colors">

@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -6,7 +5,8 @@ import {
   FileText, 
   HandCoins, 
   Globe, 
-  ShieldCheck 
+  ShieldCheck,
+  CircleDollarSign
 } from 'lucide-react';
 
 const ProductCard = ({
@@ -58,7 +58,7 @@ const Products = () => {
     };
   }, []);
 
-  const PiggyBankIcon = () => (
+  const CapitalGiroIcon = () => (
     <svg 
       width="24" 
       height="24" 
@@ -70,17 +70,15 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <path d="M11.5 6.755a3 3 0 0 0-1-.755H5a2 2 0 0 0 0 4h2.5"/>
-      <path d="M8 10h7a6 6 0 0 1 6 6v1a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a2 2 0 0 1-4 0v0a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h3"/>
-      <path d="M16 10.5V10"/>
-      <path d="M20 10.5V10"/>
-      <path d="M10.5 14.5c.83 1 2.17 1 3 0"/>
-      <path d="M16.5 8c.83 1 2.17 1 3 0"/>
-      <path d="M19 5c.96 1.16 2.5 1.16 3.46 0"/>
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 6v12" />
+      <path d="M8 12h8" />
+      <path d="M17 18l2-2-2-2" />
+      <path d="M7 6l-2 2 2 2" />
     </svg>
   );
 
-  const CheckIcon = () => (
+  const ChequeIcon = () => (
     <svg 
       width="24" 
       height="24" 
@@ -92,9 +90,9 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <rect width="18" height="10" x="3" y="8" rx="2" />
-      <path d="M7 8V6a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2" />
-      <path d="m12 12 2 2 4-4" />
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <line x1="3" y1="10" x2="21" y2="10" />
+      <path d="m7 15 3 3 7-7" />
     </svg>
   );
 
@@ -115,12 +113,12 @@ const Products = () => {
       description: "Emissão de Cédulas de Crédito Bancário e Notas Comerciais para captação de recursos junto a investidores qualificados."
     },
     {
-      icon: <PiggyBankIcon />,
+      icon: <CapitalGiroIcon />,
       title: "Capital de Giro",
       description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e contas."
     },
     {
-      icon: <CheckIcon />,
+      icon: <ChequeIcon />,
       title: "Cheque Prix",
       description: "Solução financeira para antecipar recebimentos de cheques pré-datados, proporcionando liquidez imediata para sua empresa."
     },
