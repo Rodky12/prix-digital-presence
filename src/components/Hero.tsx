@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const Hero = () => {
   return (
     <section id="home" className="relative py-32 md:py-40 bg-no-repeat bg-cover bg-center" 
-      style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80")'}}>
+      style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=1920&q=80")'}}>
       <div className="container">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="animate-fade-in text-white">

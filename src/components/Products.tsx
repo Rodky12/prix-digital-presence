@@ -5,7 +5,6 @@ import {
   Banknote, 
   FileText, 
   HandCoins, 
-  PiggyBank, 
   Globe, 
   ShieldCheck 
 } from 'lucide-react';
@@ -59,6 +58,46 @@ const Products = () => {
     };
   }, []);
 
+  const PiggyBankIcon = () => (
+    <svg 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="text-prix-blue"
+    >
+      <path d="M11.5 6.755a3 3 0 0 0-1-.755H5a2 2 0 0 0 0 4h2.5"/>
+      <path d="M8 10h7a6 6 0 0 1 6 6v1a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v-1a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1a2 2 0 0 1-4 0v0a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h3"/>
+      <path d="M16 10.5V10"/>
+      <path d="M20 10.5V10"/>
+      <path d="M10.5 14.5c.83 1 2.17 1 3 0"/>
+      <path d="M16.5 8c.83 1 2.17 1 3 0"/>
+      <path d="M19 5c.96 1.16 2.5 1.16 3.46 0"/>
+    </svg>
+  );
+
+  const CheckIcon = () => (
+    <svg 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="text-prix-blue"
+    >
+      <rect width="18" height="10" x="3" y="8" rx="2" />
+      <path d="M7 8V6a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2" />
+      <path d="m12 12 2 2 4-4" />
+    </svg>
+  );
+
   const products = [
     {
       icon: <Banknote className="text-prix-blue w-6 h-6" />,
@@ -76,12 +115,12 @@ const Products = () => {
       description: "Emissão de Cédulas de Crédito Bancário e Notas Comerciais para captação de recursos junto a investidores qualificados."
     },
     {
-      icon: <PiggyBank className="text-prix-blue w-6 h-6" />,
+      icon: <PiggyBankIcon />,
       title: "Capital de Giro",
       description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e contas."
     },
     {
-      icon: <HandCoins className="text-prix-blue w-6 h-6" />,
+      icon: <CheckIcon />,
       title: "Cheque Prix",
       description: "Solução financeira para antecipar recebimentos de cheques pré-datados, proporcionando liquidez imediata para sua empresa."
     },
