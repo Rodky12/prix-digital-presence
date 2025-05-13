@@ -1,3 +1,4 @@
+
 import { MapPin, Mail, Calendar, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
@@ -43,6 +44,9 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mb-4">Empresas</h3>
             <ul className="space-y-3">
               <li>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">Nossa História</a>
+              </li>
+              <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Múltiplo FIDC</a>
               </li>
               <li>
@@ -50,9 +54,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Magazine Pelicano</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Nossa História</a>
               </li>
             </ul>
 

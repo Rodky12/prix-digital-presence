@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -85,7 +84,7 @@ const Products = () => {
     };
   }, []);
 
-  // Custom Capital de Giro Icon with dollar sign and arrows
+  // Custom Capital de Giro Icon with improved design
   const CapitalGiroIcon = () => (
     <svg 
       width="24" 
@@ -98,11 +97,11 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <circle cx="12" cy="12" r="8" />
-      <path d="M12 7v10" />
-      <path d="M9 10h6" />
-      <path d="m16 16-4-4 4-4" />
-      <path d="m8 16 4-4-4-4" />
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 6v12" />
+      <path d="M8 10h8" />
+      <path d="M15 18l-3-3-3 3" />
+      <path d="M15 6l-3 3-3-3" />
     </svg>
   );
 
@@ -181,15 +180,6 @@ const Products = () => {
               delay={index * 150}
             />
           ))}
-        </div>
-
-        <div className="mt-16 text-center opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll" style={{ transitionDelay: '800ms' }}>
-          <Button 
-            className="bg-prix-blue hover:bg-opacity-90 font-medium px-8 py-6 text-base"
-            onClick={() => window.open('https://cliente.grupoprix.com.br', '_blank')}
-          >
-            Solicite uma proposta
-          </Button>
         </div>
       </div>
     </section>

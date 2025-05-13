@@ -10,21 +10,25 @@ const Hero = () => {
       <div className="container">
         <div className="flex flex-col items-center justify-center">
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Excelência em serviços empresariais
-            </h1>
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
+                alt="Grupo Prix" 
+                className="h-28 filter brightness-0 invert"
+              />
+            </div>
             <p className="text-lg md:text-xl mb-8 text-gray-100">
               Grupo empresarial que atua nos segmentos Imobiliário, Shopping Center e Fundo de Recebíveis (FIDC), com mais de 50 anos de experiência no mercado brasileiro.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <ScrollLink to="companies" smooth={true} offset={-80} duration={500}>
                 <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
-                  Conheça nossas empresas
+                  Empresas do Grupo
                 </Button>
               </ScrollLink>
               <ScrollLink to="products" smooth={true} offset={-80} duration={500}>
                 <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
-                  Nossos produtos <ArrowRight className="ml-2 h-4 w-4" />
+                  Produtos - FIDC <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </ScrollLink>
             </div>
