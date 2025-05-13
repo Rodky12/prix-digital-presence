@@ -3,12 +3,15 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,35 +58,49 @@ const Header = () => {
     >
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
-            alt="Grupo Prix" 
-            className="h-12 md:h-14"
-          />
+          <RouterLink to="/">
+            <img 
+              src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
+              alt="Grupo Prix" 
+              className="h-12 md:h-14"
+            />
+          </RouterLink>
         </div>
         
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
+          {isHomePage ? (
+            <>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  className="font-montserrat text-sm font-medium cursor-pointer transition-colors hover:text-prix-blue text-prix-gray-dark"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </>
+          ) : (
+            <RouterLink 
+              to="/" 
               className="font-montserrat text-sm font-medium cursor-pointer transition-colors hover:text-prix-blue text-prix-gray-dark"
             >
-              {link.name}
-            </Link>
-          ))}
-          <Button 
-            variant="default" 
-            className="bg-prix-blue hover:bg-opacity-90 text-white"
-            onClick={() => window.open('https://cliente.grupoprix.com.br', '_blank')}
-          >
-            Área do Cliente
-          </Button>
+              Voltar para o Início
+            </RouterLink>
+          )}
+          <RouterLink to="/cliente">
+            <Button 
+              variant="default" 
+              className="bg-prix-blue hover:bg-opacity-90 text-white"
+            >
+              Área do Cliente
+            </Button>
+          </RouterLink>
         </nav>
 
         {/* Mobile menu button */}
@@ -103,27 +120,43 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white py-4 shadow-md">
           <div className="container flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
+            {isHomePage ? (
+              <>
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="font-montserrat text-prix-gray-dark text-lg font-medium py-2 cursor-pointer transition-colors hover:text-prix-blue"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </>
+            ) : (
+              <RouterLink 
+                to="/" 
                 onClick={() => setMobileMenuOpen(false)}
                 className="font-montserrat text-prix-gray-dark text-lg font-medium py-2 cursor-pointer transition-colors hover:text-prix-blue"
               >
-                {link.name}
-              </Link>
-            ))}
-            <Button 
-              variant="default" 
-              className="bg-prix-blue hover:bg-opacity-90 text-white w-full"
-              onClick={() => window.open('https://cliente.grupoprix.com.br', '_blank')}
+                Voltar para o Início
+              </RouterLink>
+            )}
+            <RouterLink 
+              to="/cliente" 
+              onClick={() => setMobileMenuOpen(false)}
             >
-              Área do Cliente
-            </Button>
+              <Button 
+                variant="default" 
+                className="bg-prix-blue hover:bg-opacity-90 text-white w-full"
+              >
+                Área do Cliente
+              </Button>
+            </RouterLink>
           </div>
         </div>
       )}

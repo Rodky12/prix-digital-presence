@@ -84,7 +84,7 @@ const Products = () => {
     };
   }, []);
 
-  // Custom Capital de Giro Icon with improved design
+  // Custom Capital de Giro Icon with money circulation design
   const CapitalGiroIcon = () => (
     <svg 
       width="24" 
@@ -98,10 +98,12 @@ const Products = () => {
       className="text-prix-blue"
     >
       <circle cx="12" cy="12" r="10" />
-      <path d="M12 6v12" />
-      <path d="M8 10h8" />
-      <path d="M15 18l-3-3-3 3" />
-      <path d="M15 6l-3 3-3-3" />
+      <path d="M12 8v8" />
+      <path d="M8 12h8" />
+      <path d="M17 17c-2 2-5 2.5-7 1" />
+      <path d="M7 7c2-2 5-2.5 7-1" />
+      <path d="M17 7c-2-2-5-2.5-7-1" />
+      <path d="M7 17c2 2 5 2.5 7 1" />
     </svg>
   );
 
