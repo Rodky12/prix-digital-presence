@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -84,7 +85,7 @@ const Products = () => {
     };
   }, []);
 
-  // Custom Capital de Giro Icon with money circulation design
+  // Updated Capital de Giro Icon based on the provided image
   const CapitalGiroIcon = () => (
     <svg 
       width="24" 
@@ -97,13 +98,13 @@ const Products = () => {
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 8v8" />
-      <path d="M8 12h8" />
-      <path d="M17 17c-2 2-5 2.5-7 1" />
-      <path d="M7 7c2-2 5-2.5 7-1" />
-      <path d="M17 7c-2-2-5-2.5-7-1" />
-      <path d="M7 17c2 2 5 2.5 7 1" />
+      <circle cx="12" cy="12" r="10" strokeWidth="1.5" />
+      <path d="M12 7v10" strokeWidth="2" />
+      <path d="M16 12H8" strokeWidth="0" />
+      <path d="M17.7 14.5c-1.1 2-3.4 3.5-6.7 3.5" strokeWidth="2" strokeLinecap="round" />
+      <path d="M6.3 9.5c1.1-2 3.4-3.5 6.7-3.5" strokeWidth="2" strokeLinecap="round" />
+      <path d="M6.3 14.5c1.1 2 3.4 3.5 6.7 3.5" strokeWidth="0" />
+      <path d="M17.7 9.5c-1.1-2-3.4-3.5-6.7-3.5" strokeWidth="0" />
     </svg>
   );
 

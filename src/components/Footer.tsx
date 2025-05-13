@@ -4,6 +4,13 @@ import { MapPin, Mail, Calendar, MessageSquare } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-prix-blue text-white py-12">
       <div className="container">
@@ -44,16 +51,36 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mb-4">Empresas</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Nossa História</a>
+                <button 
+                  onClick={() => scrollToSection('history')}
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                >
+                  Nossa História
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Múltiplo FIDC</a>
+                <button 
+                  onClick={() => scrollToSection('multiplo')}
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                >
+                  Múltiplo FIDC
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">São Felipe Comercial</a>
+                <button 
+                  onClick={() => scrollToSection('saofelipe')}
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                >
+                  São Felipe Comercial
+                </button>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Magazine Pelicano</a>
+                <button 
+                  onClick={() => scrollToSection('pelicano')}
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                >
+                  Magazine Pelicano
+                </button>
               </li>
             </ul>
 
