@@ -22,7 +22,7 @@ const Footer = () => {
               className="h-14 mb-4 filter brightness-0 invert"
             />
             <p className="text-gray-300 mb-4">
-              Oferecendo soluções em administração imobiliária e antecipação de recebíveis com excelência e compromisso.
+              Grupo Empresarial que atua nos segmentos Imobiliário, Shopping Center e Fundo de Recebíveis (FIDC) com mais de 50 anos de experiência
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-300 transition-colors">

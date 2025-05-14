@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -85,26 +84,24 @@ const Products = () => {
     };
   }, []);
 
-  // Updated Capital de Giro Icon based on the provided image
+  // Custom Capital de Giro Icon (Working Capital concept)
   const CapitalGiroIcon = () => (
     <svg 
       width="24" 
       height="24" 
       viewBox="0 0 24 24" 
       fill="none" 
-      stroke="currentColor" 
+      stroke="currentColor"
       strokeWidth="2" 
       strokeLinecap="round" 
       strokeLinejoin="round" 
       className="text-prix-blue"
     >
       <circle cx="12" cy="12" r="10" strokeWidth="1.5" />
-      <path d="M12 7v10" strokeWidth="2" />
-      <path d="M16 12H8" strokeWidth="0" />
-      <path d="M17.7 14.5c-1.1 2-3.4 3.5-6.7 3.5" strokeWidth="2" strokeLinecap="round" />
-      <path d="M6.3 9.5c1.1-2 3.4-3.5 6.7-3.5" strokeWidth="2" strokeLinecap="round" />
-      <path d="M6.3 14.5c1.1 2 3.4 3.5 6.7 3.5" strokeWidth="0" />
-      <path d="M17.7 9.5c-1.1-2-3.4-3.5-6.7-3.5" strokeWidth="0" />
+      <path d="M12 6v12" strokeWidth="1.5" />
+      <path d="M8 10l4-4 4 4" strokeWidth="1.5" />
+      <path d="M8 14l4 4 4-4" strokeWidth="1.5" />
+      <path d="M16 12H8" strokeWidth="1.5" />
     </svg>
   );
 
@@ -169,7 +166,7 @@ const Products = () => {
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
-            O Múltiplo FIDC oferece uma variedade de produtos financeiros para atender às necessidades específicas do seu negócio.
+            O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
           </p>
         </div>
 
