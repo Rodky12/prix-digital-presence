@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { 
@@ -143,7 +144,7 @@ const Products = () => {
       description: "Emissão de Cédulas de Crédito Bancário e Notas Comerciais para captação de recursos junto a investidores qualificados."
     },
     {
-      icon: <CapitalGiroIcon />,
+      icon: <CircleDollarSign className="text-prix-blue w-6 h-6" />,
       title: "Capital de Giro",
       description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e contas."
     },
