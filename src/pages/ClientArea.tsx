@@ -14,7 +14,7 @@ const ClientArea = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#1A1F2C] py-16 text-white">
+        <section className="bg-[#1b3462] py-16 text-white flex items-center justify-center">
           <div className="container">
             <div className="text-center mb-8">
               <h1 className="font-montserrat font-bold text-3xl md:text-4xl mb-4">Área do Cliente</h1>
@@ -132,11 +132,11 @@ const ClientArea = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Acesso Remoto</h3>
-                <p className="text-prix-gray-dark mb-6">Suporte remoto para seu negócio.</p>
+                <p className="text-prix-gray-dark mb-6">Suporte remoto para solucionar suas dúvidas.</p>
                 <Button 
                   className="bg-prix-blue hover:bg-opacity-90 w-full"
                 >
-                  Acessar Remoto
+                  Acessar Remotamente
                 </Button>
               </div>
             </div>
