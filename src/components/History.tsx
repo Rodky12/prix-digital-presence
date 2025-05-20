@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
-import { Store, Building2, CircleDollarSign } from 'lucide-react';
+import { Store, Building2, CircleDollarSign, ArrowRight } from 'lucide-react';
+import { Button } from './ui/button';
 
 const History = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -43,12 +44,15 @@ const History = () => {
               <Store className="text-prix-blue w-6 h-6" />
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Magazine Pelicano</h3>
-            <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias.</p>
-            <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 150 filiais distribuídas por todo o Brasil com mais de 3.000 colaboradores.</p>
-            <div className="mt-6">
+            <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
+            <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
+            <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
-                Desde 1971
+                De 1971 a 2008
               </div>
+              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+              </Button>
             </div>
           </div>
 
@@ -57,12 +61,15 @@ const History = () => {
               <Building2 className="text-prix-blue w-6 h-6" />
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">São Felipe Comercial S/A</h3>
-            <p className="text-prix-gray-dark mb-4">Com início das atividades em 1995, responsável pela administração de diversos imóveis em todo o Brasil.</p>
-            <p className="text-prix-gray-dark">Inclui lojas, lajes corporativas, galpões logísticos, centros comerciais e shoppings centers, focando nos centros de varejo de importantes cidades brasileiras.</p>
-            <div className="mt-6">
+            <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
+            <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
+            <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 1995
               </div>
+              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+              </Button>
             </div>
           </div>
 
@@ -71,12 +78,15 @@ const History = () => {
               <CircleDollarSign className="text-prix-blue w-6 h-6" />
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Múltiplo - FIDC</h3>
-            <p className="text-prix-gray-dark mb-4">Constituído pelo grupo em 2005 com a experiência de mais de 20 anos no ramo de Factoring.</p>
-            <p className="text-prix-gray-dark">Atua principalmente na compra de duplicatas mercantis e de serviços, originadas da venda a prazo de empresas do segmento "Middle Market".</p>
-            <div className="mt-6">
+            <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
+            <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
+            <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 2005
               </div>
+              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+              </Button>
             </div>
           </div>
         </div>
