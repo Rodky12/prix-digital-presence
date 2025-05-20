@@ -2,6 +2,8 @@
 import { useEffect, useRef } from 'react';
 import { Store, Building2, CircleDollarSign, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
+import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
 
 const History = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -40,8 +42,14 @@ const History = () => {
 
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100">
-            <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
-              <Store className="text-prix-blue w-6 h-6" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
+                <Store className="text-prix-blue w-6 h-6" />
+              </div>
+              <Avatar className="w-12 h-12 border border-gray-100">
+                <AvatarImage src="/placeholder.svg" alt="Magazine Pelicano" />
+                <AvatarFallback>MP</AvatarFallback>
+              </Avatar>
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Magazine Pelicano</h3>
             <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
@@ -50,43 +58,61 @@ const History = () => {
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 De 1971 a 2008
               </div>
-              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
-                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
-              </Button>
+              <Link to="/magazine-pelicano">
+                <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                  Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+                </Button>
+              </Link>
             </div>
           </div>
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100">
-            <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
-              <Building2 className="text-prix-blue w-6 h-6" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
+                <Building2 className="text-prix-blue w-6 h-6" />
+              </div>
+              <Avatar className="w-12 h-12 border border-gray-100">
+                <AvatarImage src="/placeholder.svg" alt="São Felipe Comercial" />
+                <AvatarFallback>SF</AvatarFallback>
+              </Avatar>
             </div>
-            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">São Felipe Comercial S/A</h3>
+            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">São Felipe Comercial</h3>
             <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
             <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
             <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 1995
               </div>
-              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
-                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
-              </Button>
+              <Link to="/sao-felipe-comercial">
+                <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                  Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+                </Button>
+              </Link>
             </div>
           </div>
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200">
-            <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
-              <CircleDollarSign className="text-prix-blue w-6 h-6" />
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
+                <CircleDollarSign className="text-prix-blue w-6 h-6" />
+              </div>
+              <Avatar className="w-12 h-12 border border-gray-100">
+                <AvatarImage src="/placeholder.svg" alt="Múltiplo FIDC" />
+                <AvatarFallback>MF</AvatarFallback>
+              </Avatar>
             </div>
-            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Múltiplo - FIDC</h3>
+            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Múltiplo FIDC</h3>
             <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
             <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
             <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 2005
               </div>
-              <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
-                Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
-              </Button>
+              <Link to="/multiplo-fidc">
+                <Button variant="ghost" size="sm" className="text-prix-blue hover:bg-prix-blue/10 p-1 h-auto">
+                  Saiba Mais <ArrowRight className="ml-1 w-3 h-3" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
