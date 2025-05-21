@@ -21,9 +21,9 @@ const Hero = () => {
               Grupo empresarial que atua nos segmentos Imobiliário, de Shopping Centers e de Fundos de Recebíveis (FIDC), com mais de 50 anos de experiência no mercado brasileiro.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <ScrollLink to="companies" smooth={true} offset={-80} duration={500}>
+              <ScrollLink to="history" smooth={true} offset={-80} duration={500}>
                 <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
-                  Empresas do Grupo
+                  Nossa História
                 </Button>
               </ScrollLink>
               <ScrollLink to="products" smooth={true} offset={-80} duration={500}>
