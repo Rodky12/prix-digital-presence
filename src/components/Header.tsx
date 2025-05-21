@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-scroll';
@@ -30,7 +31,7 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Início', to: 'home' },
-    { name: 'História', to: 'history' },
+    { name: 'Empresas', to: 'history' },
     { name: 'Produtos FIDC', to: 'products' },
     { name: 'Contato', to: 'contact' },
   ];

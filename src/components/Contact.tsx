@@ -55,7 +55,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact" className="section bg-white">
+    <section id="contact" className="section bg-white h-screen flex items-center">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Entre em Contato</h2>
