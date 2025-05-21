@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <ScrollLink to="history" smooth={true} offset={-80} duration={500}>
                 <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
-                  Nossa História
+                  Empresas do Grupo
                 </Button>
               </ScrollLink>
               <ScrollLink to="products" smooth={true} offset={-80} duration={500}>

@@ -29,10 +29,10 @@ const History = () => {
   }, []);
 
   return (
-    <section id="history" className="section bg-gray-50">
+    <section id="history" className="section bg-white">
       <div className="container">
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossa História</h2>
+          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Grupo Prix - Empresas</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
             Conheça nossas empresas, suas trajetórias e seus ramos de atuação.

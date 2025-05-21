@@ -32,10 +32,20 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <History />
-      <Products />
-      <Contact />
+      <div className="pt-16"> {/* Added padding top to account for fixed header */}
+        <div className="min-h-screen flex flex-col">
+          <Hero />
+        </div>
+        <div className="min-h-screen flex flex-col">
+          <History />
+        </div>
+        <div className="min-h-screen flex flex-col">
+          <Products />
+        </div>
+        <div className="min-h-screen flex flex-col">
+          <Contact />
+        </div>
+      </div>
       <Footer />
     </div>
   );
