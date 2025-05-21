@@ -28,7 +28,7 @@ const Hero = () => {
               </ScrollLink>
               <ScrollLink to="products" smooth={true} offset={-80} duration={500}>
                 <Button className="bg-prix-blue hover:bg-opacity-90 font-medium px-6 py-6 text-base">
-                  Produtos - FIDC <ArrowRight className="ml-2 h-4 w-4" />
+                  Produtos FIDC <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </ScrollLink>
             </div>
