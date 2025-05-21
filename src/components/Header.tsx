@@ -33,7 +33,7 @@ const Header = () => {
     { name: 'Início', to: 'home' },
     { name: 'História', to: 'history' },
     { name: 'Empresas', to: 'companies' },
-    { name: 'Produtos - FIDC', to: 'products' },
+    { name: 'Produtos FIDC', to: 'products' },
     { name: 'Contato', to: 'contact' },
   ];
 

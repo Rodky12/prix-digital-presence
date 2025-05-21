@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react';
 import { Store, Building2, CircleDollarSign, ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
-import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
 
 const History = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -36,7 +35,7 @@ const History = () => {
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossa História</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
-            Conheça a trajetória do Grupo Prix e como evoluímos para oferecer os melhores serviços em nossos segmentos de atuação.
+            Conheça nossas empresas, suas trajetórias e seus ramos de atuação.
           </p>
         </div>
 
@@ -46,10 +45,13 @@ const History = () => {
               <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
                 <Store className="text-prix-blue w-6 h-6" />
               </div>
-              <Avatar className="w-12 h-12 border border-gray-100">
-                <AvatarImage src="/placeholder.svg" alt="Magazine Pelicano" />
-                <AvatarFallback>MP</AvatarFallback>
-              </Avatar>
+              <div className="w-auto h-12 flex items-center">
+                <img 
+                  src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
+                  alt="Magazine Pelicano" 
+                  className="h-full object-contain"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Magazine Pelicano</h3>
             <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
@@ -71,10 +73,13 @@ const History = () => {
               <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
                 <Building2 className="text-prix-blue w-6 h-6" />
               </div>
-              <Avatar className="w-12 h-12 border border-gray-100">
-                <AvatarImage src="/placeholder.svg" alt="São Felipe Comercial" />
-                <AvatarFallback>SF</AvatarFallback>
-              </Avatar>
+              <div className="w-auto h-12 flex items-center">
+                <img 
+                  src="/lovable-uploads/6725d9df-3853-469b-9da9-f5626aed064f.png" 
+                  alt="São Felipe Comercial" 
+                  className="h-full object-contain"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">São Felipe Comercial</h3>
             <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
@@ -96,10 +101,13 @@ const History = () => {
               <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
                 <CircleDollarSign className="text-prix-blue w-6 h-6" />
               </div>
-              <Avatar className="w-12 h-12 border border-gray-100">
-                <AvatarImage src="/placeholder.svg" alt="Múltiplo FIDC" />
-                <AvatarFallback>MF</AvatarFallback>
-              </Avatar>
+              <div className="w-auto h-12 flex items-center">
+                <img 
+                  src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
+                  alt="Múltiplo FIDC" 
+                  className="h-full object-contain"
+                />
+              </div>
             </div>
             <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Múltiplo FIDC</h3>
             <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
