@@ -1,5 +1,6 @@
 
 import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,28 +47,19 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('multiplo')}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                >
+                <Link to="/multiplo-fidc" className="text-gray-300 hover:text-white transition-colors">
                   Múltiplo FIDC
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('saofelipe')}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                >
+                <Link to="/sao-felipe-comercial" className="text-gray-300 hover:text-white transition-colors">
                   São Felipe Comercial
-                </button>
+                </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('pelicano')}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                >
+                <Link to="/magazine-pelicano" className="text-gray-300 hover:text-white transition-colors">
                   Magazine Pelicano
-                </button>
+                </Link>
               </li>
             </ul>
 

@@ -168,7 +168,7 @@ const Products = () => {
             <img 
               src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
               alt="Múltiplo FIDC" 
-              className="h-16"
+              className="h-20"
             />
           </div>
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>

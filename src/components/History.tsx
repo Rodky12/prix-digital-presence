@@ -44,13 +44,12 @@ const History = () => {
             <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
-                  src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
+                  src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
                   className="h-full object-contain"
                 />
               </div>
             </div>
-            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Magazine Pelicano</h3>
             <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
             <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
             <div className="mt-6 flex items-center space-x-2">
@@ -69,13 +68,12 @@ const History = () => {
             <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
-                  src="/lovable-uploads/6725d9df-3853-469b-9da9-f5626aed064f.png" 
+                  src="/lovable-uploads/0150b0ee-ddad-4833-90a7-d3910324b554.png" 
                   alt="São Felipe Comercial" 
                   className="h-full object-contain"
                 />
               </div>
             </div>
-            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">São Felipe Comercial</h3>
             <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
             <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
             <div className="mt-6 flex items-center space-x-2">
@@ -94,13 +92,12 @@ const History = () => {
             <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
-                  src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
+                  src="/lovable-uploads/5d6c5d04-9d54-470e-8289-ae6750faa72c.png" 
                   alt="Múltiplo FIDC" 
                   className="h-full object-contain"
                 />
               </div>
             </div>
-            <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Múltiplo FIDC</h3>
             <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
             <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
             <div className="mt-6 flex items-center space-x-2">
