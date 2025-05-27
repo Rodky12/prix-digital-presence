@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import MagazinePelicano from "./pages/MagazinePelicano";
 import SaoFelipeComercial from "./pages/SaoFelipeComercial";
 import MultiploFIDC from "./pages/MultiploFIDC";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/magazine-pelicano" element={<MagazinePelicano />} />
           <Route path="/sao-felipe-comercial" element={<SaoFelipeComercial />} />
           <Route path="/multiplo-fidc" element={<MultiploFIDC />} />
+          <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -69,7 +69,7 @@ const Footer = () => {
                 <a href="https://webmail.grupoprix.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Webmail</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</a>
+                <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
               </li>
             </ul>
           </div>
