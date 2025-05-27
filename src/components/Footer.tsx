@@ -21,9 +21,6 @@ const Footer = () => {
               alt="Grupo Prix" 
               className="h-14 mb-4 filter brightness-0 invert"
             />
-            <p className="text-gray-300 mb-4">
-              Grupo empresarial que atua nos segmentos Imobiliário, de Shopping Centers e de Fundos de Recebíveis (FIDC), com mais de 50 anos de experiência no mercado brasileiro.
-            </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/prixempresarial/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram width="20" height="20" />
@@ -45,7 +42,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('history')}
                   className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
-                  Nossa História
+                  Grupo Prix - Empresas
                 </button>
               </li>
               <li>
@@ -77,7 +74,7 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mt-6 mb-4">Institucional</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Webmail</a>
+                <a href="https://webmail.grupoprix.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Webmail</a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</a>
