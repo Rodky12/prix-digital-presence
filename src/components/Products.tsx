@@ -166,9 +166,9 @@ const Products = () => {
         <div className="text-center mb-16 opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
+              src="/lovable-uploads/40c0eebf-d899-4ead-b2d7-4664fd8b36cb.png" 
               alt="Múltiplo FIDC" 
-              className="h-32"
+              className="h-40"
             />
           </div>
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>
