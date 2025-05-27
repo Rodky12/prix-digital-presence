@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { Store, Building2, CircleDollarSign, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { Link } from 'react-router-dom';
 
@@ -41,10 +41,7 @@ const History = () => {
 
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
-                <Store className="text-prix-blue w-6 h-6" />
-              </div>
+            <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
@@ -69,10 +66,7 @@ const History = () => {
           </div>
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
-                <Building2 className="text-prix-blue w-6 h-6" />
-              </div>
+            <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/6725d9df-3853-469b-9da9-f5626aed064f.png" 
@@ -97,10 +91,7 @@ const History = () => {
           </div>
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
-                <CircleDollarSign className="text-prix-blue w-6 h-6" />
-              </div>
+            <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 

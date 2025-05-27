@@ -14,7 +14,7 @@ const ClientArea = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#1b3462] py-24 text-white flex items-center justify-center">
+        <section className="bg-[#1b3462] py-32 text-white flex items-center justify-center">
           <div className="container flex items-center justify-center h-full">
             <div className="text-center">
               <h1 className="font-montserrat font-bold text-3xl md:text-4xl mb-4">Área do Cliente</h1>
@@ -137,13 +137,13 @@ const ClientArea = () => {
                     <path d="M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 0 1 9.288 0M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Acesso Remoto</h3>
-                <p className="text-prix-gray-dark mb-6">Suporte remoto para solucionar suas dúvidas.</p>
+                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Help Desk</h3>
+                <p className="text-prix-gray-dark mb-6">Acesso remoto para soluções de TI.</p>
                 <div className="mt-auto">
                   <Button 
                     className="bg-prix-blue hover:bg-opacity-90 w-full"
                   >
-                    Acessar Remotamente
+                    Acesso Remoto
                   </Button>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 
-import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin } from 'lucide-react';
+import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin, X } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,6 +30,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/company/grupo-prix/?trk=top_nav_home" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Linkedin width="20" height="20" />
+              </a>
+              <a href="https://x.com/prixempresarial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+                <X width="20" height="20" />
               </a>
             </div>
           </div>
@@ -74,7 +77,7 @@ const Footer = () => {
             <h3 className="font-montserrat font-semibold text-white text-lg mt-6 mb-4">Institucional</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Governança</a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">Webmail</a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</a>

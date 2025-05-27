@@ -164,6 +164,13 @@ const Products = () => {
     <section id="products" className="section bg-gray-50">
       <div className="container">
         <div className="text-center mb-16 opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll">
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
+              alt="Múltiplo FIDC" 
+              className="h-16"
+            />
+          </div>
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
