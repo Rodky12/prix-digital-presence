@@ -40,7 +40,7 @@ const History = () => {
         </div>
 
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100">
+          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-21 flex items-center">
                 <img 
@@ -50,8 +50,10 @@ const History = () => {
                 />
               </div>
             </div>
-            <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
-            <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
+            <div className="flex-grow">
+              <p className="text-prix-gray-dark mb-4">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
+              <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
+            </div>
             <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 De 1971 a 2008
@@ -64,7 +66,7 @@ const History = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100">
+          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-auto h-21 flex items-center">
                 <img 
@@ -74,8 +76,10 @@ const History = () => {
                 />
               </div>
             </div>
-            <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
-            <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
+            <div className="flex-grow">
+              <p className="text-prix-gray-dark mb-4">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
+              <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
+            </div>
             <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 1995
@@ -88,9 +92,9 @@ const History = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200">
+          <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-16 flex items-center">
+              <div className="w-auto h-21 flex items-center">
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
@@ -98,8 +102,10 @@ const History = () => {
                 />
               </div>
             </div>
-            <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
-            <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
+            <div className="flex-grow">
+              <p className="text-prix-gray-dark mb-4">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
+              <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
+            </div>
             <div className="mt-6 flex items-center space-x-2">
               <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                 Desde 2005
