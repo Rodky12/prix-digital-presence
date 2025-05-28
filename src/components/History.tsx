@@ -42,11 +42,12 @@ const History = () => {
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-21 flex items-center">
+              <div className="flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
-                  className="h-full object-contain"
+                  style={{ width: '314.6px', height: '188.8px' }}
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -68,11 +69,12 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-21 flex items-center">
+              <div className="flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
-                  className="h-full object-contain"
+                  style={{ width: '334px', height: '137.3px' }}
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -94,11 +96,12 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200 flex flex-col">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-21 flex items-center">
+              <div className="flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
-                  className="h-full object-contain"
+                  style={{ width: '314.6px', height: '98.7px' }}
+                  className="object-contain"
                 />
               </div>
             </div>
