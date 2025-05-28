@@ -42,7 +42,7 @@ const History = () => {
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-20 flex items-center">
+              <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
@@ -66,7 +66,7 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-20 flex items-center">
+              <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
@@ -90,7 +90,7 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-20 flex items-center">
+              <div className="w-auto h-12 flex items-center">
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
