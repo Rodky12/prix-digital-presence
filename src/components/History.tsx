@@ -55,8 +55,10 @@ const History = () => {
               <div className="h-20 mb-4">
                 <p className="text-prix-gray-dark">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
               </div>
-              <p className="text-prix-gray-dark mb-6 flex-grow">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
-              <div className="flex items-center space-x-2">
+              <div className="h-20 mb-6">
+                <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
+              </div>
+              <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                   De 1971 a 2008
                 </div>
@@ -84,8 +86,10 @@ const History = () => {
               <div className="h-20 mb-4">
                 <p className="text-prix-gray-dark">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
               </div>
-              <p className="text-prix-gray-dark mb-6 flex-grow">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
-              <div className="flex items-center space-x-2">
+              <div className="h-20 mb-6">
+                <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
+              </div>
+              <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                   Desde 1995
                 </div>
@@ -113,8 +117,10 @@ const History = () => {
               <div className="h-20 mb-4">
                 <p className="text-prix-gray-dark">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
               </div>
-              <p className="text-prix-gray-dark mb-6 flex-grow">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
-              <div className="flex items-center space-x-2">
+              <div className="h-20 mb-6">
+                <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
+              </div>
+              <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
                   Desde 2005
                 </div>
