@@ -66,9 +66,9 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-25 flex items-center">
+              <div className="w-auto h-20 flex items-center">
                 <img 
-                  src="/lovable-uploads/0150b0ee-ddad-4833-90a7-d3910324b554.png" 
+                  src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
                   className="h-full object-contain"
                 />
@@ -90,9 +90,9 @@ const History = () => {
 
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-200">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-auto h-25 flex items-center">
+              <div className="w-auto h-20 flex items-center">
                 <img 
-                  src="/lovable-uploads/5d6c5d04-9d54-470e-8289-ae6750faa72c.png" 
+                  src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
                   className="h-full object-contain"
                 />

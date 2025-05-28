@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -13,8 +14,8 @@ const ClientArea = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#1b3462] py-20 text-white flex flex-col items-center justify-center relative">
-          <div className="text-center">
+        <section className="bg-[#1b3462] py-30 text-white flex flex-col items-center justify-center relative">
+          <div className="text-center mt-8">
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-white mb-6">Área do Cliente</h1>
             <div className="w-20 h-1 bg-white mx-auto"></div>
           </div>

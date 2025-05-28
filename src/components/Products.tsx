@@ -130,7 +130,7 @@ const Products = () => {
   const products = [
     {
       icon: <Banknote className="text-prix-blue w-6 h-6" />,
-      title: "Antecipação de recebíveis",
+      title: "Antecipação de Recebíveis",
       description: "Antecipe seus recebimentos de vendas a prazo, melhorando seu fluxo de caixa e permitindo novos investimentos."
     },
     {
@@ -140,23 +140,23 @@ const Products = () => {
     },
     {
       icon: <FileText className="text-prix-blue w-6 h-6" />,
-      title: "CCB e Nota comercial",
-      description: "Emissão de Cédulas de Crédito Bancário e Notas Comerciais para captação de recursos junto a investidores qualificados."
+      title: "CCB e Nota Comercial",
+      description: "Operações financeiras estruturadas de médio e longo prazo."
     },
     {
       icon: <CircleDollarSign className="text-prix-blue w-6 h-6" />,
       title: "Capital de Giro",
-      description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e contas."
+      description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e despesas."
     },
     {
       icon: <ChequeIcon />,
-      title: "Cheque Prix",
-      description: "Solução financeira para antecipar recebimentos de cheques pré-datados, proporcionando liquidez imediata para sua empresa."
+      title: "Cheque Prix (Hot Money)",
+      description: "Crédito rápido e descomplicado para impulsionar seu negócio. Com condições sob medida, você acessa recursos com segurança e agilidade."
     },
     {
       icon: <ShieldCheck className="text-prix-blue w-6 h-6" />,
       title: "Conta Escrow",
-      description: "Conta garantia que aumenta a segurança em operações financeiras, servindo como intermediária entre as partes envolvidas."
+      description: "Utilizada para custodiar recursos, garantindo o cumprimento das condições acordadas entre as partes."
     },
   ];
 
