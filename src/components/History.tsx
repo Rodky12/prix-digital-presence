@@ -46,7 +46,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
-                  style={{ width: '220px', height: '132px' }}
+                  style={{ width: '251.7px', height: '151px' }}
                   className="object-contain"
                 />
               </div>
@@ -73,7 +73,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
-                  style={{ width: '234px', height: '96px' }}
+                  style={{ width: '267.2px', height: '110px' }}
                   className="object-contain"
                 />
               </div>
@@ -100,7 +100,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
-                  style={{ width: '220px', height: '69px' }}
+                  style={{ width: '251.7px', height: '79px' }}
                   className="object-contain"
                 />
               </div>
