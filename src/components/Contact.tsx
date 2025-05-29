@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
@@ -64,7 +65,7 @@ const Contact = () => {
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-2 gap-8 lg:gap-16">
           <div>
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 w-full">
+              <div className="h-48 w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2493883324145!2d-46.647944!3d-23.5683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec2052c7f%3A0x589c13729fc02ecf!2sPrix%20Empresarial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
                   width="100%"
@@ -123,7 +124,7 @@ const Contact = () => {
           </div>
 
           <div>
-            <div className="bg-prix-blue/5 p-8 rounded-lg border border-prix-blue/10">
+            <div className="bg-prix-blue/5 p-6 rounded-lg border border-prix-blue/10">
               <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-6">Fale Conosco</h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
@@ -164,7 +165,7 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-prix-gray-dark mb-1">Mensagem</label>
                   <textarea
                     id="message"
-                    rows={4}
+                    rows={3}
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
                     value={formData.message}
                     onChange={handleInputChange}
