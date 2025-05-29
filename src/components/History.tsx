@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
@@ -42,11 +41,11 @@ const History = () => {
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 flex flex-col h-full">
             <div className="flex items-start gap-4 mb-4">
-              <div className="flex items-center justify-center h-36">
+              <div className="flex items-center justify-center h-36 pt-4">
                 <img 
                   src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
-                  style={{ width: '251.7px', height: '151px' }}
+                  style={{ width: '201.4px', height: '121px' }}
                   className="object-contain"
                 />
               </div>
@@ -77,7 +76,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
-                  style={{ width: '267.2px', height: '110px' }}
+                  style={{ width: '213.8px', height: '88px' }}
                   className="object-contain"
                 />
               </div>
@@ -108,7 +107,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
-                  style={{ width: '251.7px', height: '79px' }}
+                  style={{ width: '201.4px', height: '63.2px' }}
                   className="object-contain"
                 />
               </div>

@@ -28,15 +28,6 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/grupo-prix/?trk=top_nav_home" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Linkedin width="32" height="32" />
               </a>
-              <a href="https://x.com/prixempresarial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <img 
-                  src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
-                  alt="X (Twitter)" 
-                  width="32" 
-                  height="32" 
-                  className="filter brightness-0 invert"
-                />
-              </a>
             </div>
           </div>
           
