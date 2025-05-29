@@ -1,4 +1,3 @@
-
 import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -24,13 +23,13 @@ const Footer = () => {
             />
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/prixempresarial/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <Instagram width="20" height="20" />
+                <Instagram width="32" height="32" />
               </a>
               <a href="https://www.linkedin.com/company/grupo-prix/?trk=top_nav_home" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <Linkedin width="20" height="20" />
+                <Linkedin width="32" height="32" />
               </a>
               <a href="https://x.com/prixempresarial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <X width="20" height="20" />
+                <X width="32" height="32" />
               </a>
             </div>
           </div>
