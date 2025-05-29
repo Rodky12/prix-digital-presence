@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
@@ -133,7 +132,6 @@ const Contact = () => {
                     type="text"
                     id="name"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    placeholder="Seu nome completo"
                     value={formData.name}
                     onChange={handleInputChange}
                     required
@@ -145,7 +143,6 @@ const Contact = () => {
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    placeholder="seu@email.com"
                     value={formData.email}
                     onChange={handleInputChange}
                     required
@@ -169,7 +166,6 @@ const Contact = () => {
                     id="message"
                     rows={4}
                     className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    placeholder="Como podemos ajudar?"
                     value={formData.message}
                     onChange={handleInputChange}
                     required
