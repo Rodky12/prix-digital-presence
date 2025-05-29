@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
@@ -57,12 +56,9 @@ const Contact = () => {
   return (
     <section id="contact" className="section bg-white">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Entre em Contato</h2>
-          <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
-          <p className="text-prix-gray-dark max-w-2xl mx-auto">
-            Estamos à disposição para atender às suas necessidades e esclarecer qualquer dúvida sobre nossos serviços.
-          </p>
+        <div className="text-center mb-8">
+          <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Contato</h2>
+          <div className="w-20 h-1 bg-prix-blue mx-auto"></div>
         </div>
 
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-2 gap-8 lg:gap-16">
@@ -128,7 +124,7 @@ const Contact = () => {
 
           <div>
             <div className="bg-prix-blue/5 p-8 rounded-lg border border-prix-blue/10">
-              <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-6">Entre em contato</h3>
+              <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-6">Fale Conosco</h3>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-prix-gray-dark mb-1">Nome</label>
