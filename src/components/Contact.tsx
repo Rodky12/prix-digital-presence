@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
@@ -66,18 +67,18 @@ const Contact = () => {
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976000344805!2d-46.65410742376747!3d-23.565639178429584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7eb352091%3A0x2a296f4170f7d3e1!2sAv.%20Paulista%2C%20460%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-904!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2493883324145!2d-46.647944!3d-23.5683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec2052c7f%3A0x589c13729fc02ecf!2sPrix%20Empresarial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização Grupo Prix"
+                  title="Localização Prix Empresarial Ltda"
                 ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nosso Endereço</h3>
+                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
