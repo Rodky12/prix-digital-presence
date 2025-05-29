@@ -1,4 +1,5 @@
-import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin, X } from 'lucide-react';
+
+import { MapPin, Mail, Calendar, MessageSquare, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -29,7 +30,13 @@ const Footer = () => {
                 <Linkedin width="32" height="32" />
               </a>
               <a href="https://x.com/prixempresarial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <X width="32" height="32" />
+                <img 
+                  src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
+                  alt="X (Twitter)" 
+                  width="32" 
+                  height="32" 
+                  className="filter brightness-0 invert"
+                />
               </a>
             </div>
           </div>
