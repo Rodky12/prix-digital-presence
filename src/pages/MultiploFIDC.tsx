@@ -32,13 +32,6 @@ const MultiploFIDC = () => {
             <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
               <CircleDollarSign className="text-prix-blue w-6 h-6" />
             </div>
-            <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/2c4d32aa-3ea6-4483-84bb-7a6419dc7572.png" 
-                alt="Múltiplo FIDC" 
-                className="h-10"
-              />
-            </div>
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">Múltiplo FIDC</h1>
           </div>
           

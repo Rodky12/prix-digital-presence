@@ -32,13 +32,6 @@ const MagazinePelicano = () => {
             <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
               <Store className="text-prix-blue w-6 h-6" />
             </div>
-            <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
-                alt="Magazine Pelicano" 
-                className="h-10"
-              />
-            </div>
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">Magazine Pelicano</h1>
           </div>
           

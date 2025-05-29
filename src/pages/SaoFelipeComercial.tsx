@@ -32,13 +32,6 @@ const SaoFelipeComercial = () => {
             <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center">
               <Building2 className="text-prix-blue w-6 h-6" />
             </div>
-            <div className="flex items-center">
-              <img 
-                src="/lovable-uploads/6725d9df-3853-469b-9da9-f5626aed064f.png" 
-                alt="São Felipe Comercial" 
-                className="h-10"
-              />
-            </div>
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">São Felipe Comercial</h1>
           </div>
           
