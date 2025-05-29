@@ -35,6 +35,23 @@ const SaoFelipeComercial = () => {
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">São Felipe Comercial</h1>
           </div>
           
+          <div className="max-w-3xl mb-8">
+            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
+            <p className="text-prix-gray-dark mb-4">
+              Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.
+              Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das 
+              principais cidades brasileiras.
+            </p>
+            <p className="text-prix-gray-dark mb-4">
+              A empresa consolidou-se como referência no setor imobiliário comercial, prestando serviços de administração, planejamento e 
+              desenvolvimento de projetos imobiliários estratégicos.
+            </p>
+            <p className="text-prix-gray-dark mb-8">
+              Com um portfólio diversificado, a São Felipe Comercial continua expandindo sua atuação no mercado nacional, 
+              sempre com foco na excelência e na geração de valor para seus parceiros e clientes.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-16">
             <div className="order-2 md:order-1">
               <div className="relative">
@@ -85,23 +102,6 @@ const SaoFelipeComercial = () => {
                 O foco da São Felipe é atuar nos centros de varejo de importantes cidades brasileiras, principalmente no estado de São Paulo, oferecendo soluções imobiliárias de alto padrão.
               </p>
             </div>
-          </div>
-          
-          <div className="max-w-3xl mb-8">
-            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
-            <p className="text-prix-gray-dark mb-4">
-              Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.
-              Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das 
-              principais cidades brasileiras.
-            </p>
-            <p className="text-prix-gray-dark mb-4">
-              A empresa consolidou-se como referência no setor imobiliário comercial, prestando serviços de administração, planejamento e 
-              desenvolvimento de projetos imobiliários estratégicos.
-            </p>
-            <p className="text-prix-gray-dark">
-              Com um portfólio diversificado, a São Felipe Comercial continua expandindo sua atuação no mercado nacional, 
-              sempre com foco na excelência e na geração de valor para seus parceiros e clientes.
-            </p>
           </div>
           
           <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">

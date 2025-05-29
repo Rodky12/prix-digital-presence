@@ -35,6 +35,22 @@ const MagazinePelicano = () => {
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">Magazine Pelicano</h1>
           </div>
           
+          <div className="max-w-3xl mb-8">
+            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
+            <p className="text-prix-gray-dark mb-4">
+              Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.
+              Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.
+            </p>
+            <p className="text-prix-gray-dark mb-4">
+              Durante quase quatro décadas, o Magazine Pelicano manteve-se como referência no varejo brasileiro, oferecendo produtos diversos
+              e um atendimento de qualidade que marcou uma era no comércio nacional.
+            </p>
+            <p className="text-prix-gray-dark mb-8">
+              As operações do Magazine Pelicano se encerraram em 2008, mas seu legado e importância histórica para o Grupo Prix permanecem como 
+              parte fundamental da trajetória empresarial que levou à formação das demais empresas do grupo.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-16">
             <div>
               <h2 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Magazine Pelicano</h2>
@@ -74,22 +90,6 @@ const MagazinePelicano = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="max-w-3xl mb-8">
-            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
-            <p className="text-prix-gray-dark mb-4">
-              Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.
-              Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.
-            </p>
-            <p className="text-prix-gray-dark mb-4">
-              Durante quase quatro décadas, o Magazine Pelicano manteve-se como referência no varejo brasileiro, oferecendo produtos diversos
-              e um atendimento de qualidade que marcou uma era no comércio nacional.
-            </p>
-            <p className="text-prix-gray-dark">
-              As operações do Magazine Pelicano se encerraram em 2008, mas seu legado e importância histórica para o Grupo Prix permanecem como 
-              parte fundamental da trajetória empresarial que levou à formação das demais empresas do grupo.
-            </p>
           </div>
           
           <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">

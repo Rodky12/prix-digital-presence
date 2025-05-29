@@ -35,6 +35,22 @@ const MultiploFIDC = () => {
             <h1 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue">Múltiplo FIDC</h1>
           </div>
           
+          <div className="max-w-3xl mb-8">
+            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
+            <p className="text-prix-gray-dark mb-4">
+              Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.
+              Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.
+            </p>
+            <p className="text-prix-gray-dark mb-4">
+              O Múltiplo FIDC foi uma evolução natural após anos de atuação no mercado financeiro, permitindo atender empresas 
+              com necessidade de capital de giro e antecipação de recebíveis de forma mais estruturada e eficiente.
+            </p>
+            <p className="text-prix-gray-dark mb-8">
+              Ao longo dos anos, o Fundo consolidou sua posição no mercado como uma instituição séria e confiável,
+              oferecendo soluções financeiras personalizadas e competitivas para seus clientes.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-16">
             <div>
               <h2 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo FIDC</h2>
@@ -80,22 +96,6 @@ const MultiploFIDC = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="max-w-3xl mb-8">
-            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
-            <p className="text-prix-gray-dark mb-4">
-              Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.
-              Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.
-            </p>
-            <p className="text-prix-gray-dark mb-4">
-              O Múltiplo FIDC foi uma evolução natural após anos de atuação no mercado financeiro, permitindo atender empresas 
-              com necessidade de capital de giro e antecipação de recebíveis de forma mais estruturada e eficiente.
-            </p>
-            <p className="text-prix-gray-dark">
-              Ao longo dos anos, o Fundo consolidou sua posição no mercado como uma instituição séria e confiável,
-              oferecendo soluções financeiras personalizadas e competitivas para seus clientes.
-            </p>
           </div>
           
           <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
