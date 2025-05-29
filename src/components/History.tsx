@@ -30,7 +30,7 @@ const History = () => {
   return (
     <section id="history" className="section bg-white">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Grupo Prix - Empresas</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
           <p className="text-prix-gray-dark max-w-2xl mx-auto">
@@ -40,12 +40,12 @@ const History = () => {
 
         <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 flex flex-col h-full">
-            <div className="flex items-start gap-4 mb-4">
+            <div className="flex items-start gap-4 mb-6">
               <div className="flex items-center justify-center h-36 pt-4">
                 <img 
                   src="/lovable-uploads/3199546a-e493-4a69-8495-bf90fa77afff.png" 
                   alt="Magazine Pelicano" 
-                  style={{ width: '201.4px', height: '121px' }}
+                  style={{ width: '161px', height: '97px' }}
                   className="object-contain"
                 />
               </div>
@@ -76,7 +76,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
                   alt="São Felipe Comercial" 
-                  style={{ width: '213.8px', height: '88px' }}
+                  style={{ width: '171px', height: '70px' }}
                   className="object-contain"
                 />
               </div>
@@ -107,7 +107,7 @@ const History = () => {
                 <img 
                   src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
                   alt="Múltiplo FIDC" 
-                  style={{ width: '201.4px', height: '63.2px' }}
+                  style={{ width: '161px', height: '51px' }}
                   className="object-contain"
                 />
               </div>
