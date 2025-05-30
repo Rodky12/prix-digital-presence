@@ -14,7 +14,7 @@ const ClientArea = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        <section className="bg-[#1b3462] text-white flex flex-col items-center justify-center relative pt-20" style={{ height: '134px' }}>
+        <section className="bg-[#1b3462] text-white flex flex-col items-center justify-center relative pt-20 pb-4" style={{ minHeight: '114px' }}>
           <div className="text-center">
             <h1 className="font-montserrat font-bold text-2xl md:text-3xl text-white mb-3">Área do Cliente</h1>
             <div className="w-16 h-0.5 bg-white mx-auto"></div>
