@@ -103,6 +103,27 @@ const MultiploFIDC = () => {
               </div>
             </div>
           </div>
+
+          {/* Selos de Certificação */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <div className="flex justify-center items-center gap-8 md:gap-12">
+              <img 
+                src="/lovable-uploads/3c00ed73-3855-447b-9eb7-93e4f1ef5571.png" 
+                alt="Certifica" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+              <img 
+                src="/lovable-uploads/31c388af-bad2-47d2-b5ad-06abb7ce8925.png" 
+                alt="ANBIMA" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+              <img 
+                src="/lovable-uploads/b1a8b0e0-5200-4804-a84a-68c7603a41da.png" 
+                alt="Qitech" 
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
         </div>
       </section>
       
