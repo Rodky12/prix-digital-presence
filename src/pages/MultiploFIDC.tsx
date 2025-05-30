@@ -59,7 +59,6 @@ const MultiploFIDC = () => {
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Título da seção</h2>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
-                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Múltiplo FIDC</h3>
                 <p className="text-prix-gray-dark mb-4">
                   O Múltiplo FIDC (Fundo de Investimento em Direitos Creditórios Não-Padronizados Multissetorial) foi constituído pelo grupo em 2005 com a experiência de mais de 20 anos no ramo de Factoring.
                 </p>
@@ -102,10 +101,6 @@ const MultiploFIDC = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium mt-8">
-              Desde 2005
             </div>
           </div>
         </div>

@@ -59,24 +59,7 @@ const SaoFelipeComercial = () => {
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Título da seção</h2>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <div className="order-2 md:order-1">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
-                  <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
-                    <img 
-                      src="/lovable-uploads/d6d89c29-3bf1-4d4d-9df0-5d5c09c0aec6.png" 
-                      alt="São Felipe Comercial" 
-                      className="w-full h-auto mb-6"
-                    />
-                    <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
-                    <p className="text-sm text-prix-gray-dark">
-                      Gerenciamento eficiente de propriedades comerciais em localizações estratégicas para maximizar o retorno sobre o investimento.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="order-1 md:order-2">
-                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">São Felipe Comercial</h3>
+              <div>
                 <p className="text-prix-gray-dark mb-4">
                   Com início das atividades em 1995, a São Felipe Comercial é especializada em locação e administração imobiliária de diversos imóveis em todo o Brasil, incluindo:
                 </p>
@@ -108,10 +91,22 @@ const SaoFelipeComercial = () => {
                   O foco da São Felipe é atuar nos centros de varejo de importantes cidades brasileiras, principalmente no estado de São Paulo, oferecendo soluções imobiliárias de alto padrão.
                 </p>
               </div>
-            </div>
-            
-            <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium mt-8">
-              Desde 1995
+              <div>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
+                  <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
+                    <img 
+                      src="/lovable-uploads/d6d89c29-3bf1-4d4d-9df0-5d5c09c0aec6.png" 
+                      alt="São Felipe Comercial" 
+                      className="w-full h-auto mb-6"
+                    />
+                    <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
+                    <p className="text-sm text-prix-gray-dark">
+                      Gerenciamento eficiente de propriedades comerciais em localizações estratégicas para maximizar o retorno sobre o investimento.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

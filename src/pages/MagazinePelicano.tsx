@@ -59,7 +59,6 @@ const MagazinePelicano = () => {
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Título da seção</h2>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
-                <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-prix-blue mb-4">Magazine Pelicano</h3>
                 <p className="text-prix-gray-dark mb-4">
                   Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias. Revolucionou este mercado atingindo a marca de mais de 150 filiais distribuídas por todo o Brasil com mais de 3.000 colaboradores.
                 </p>
@@ -96,10 +95,6 @@ const MagazinePelicano = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium mt-8">
-              De 1971 a 2008
             </div>
           </div>
         </div>
