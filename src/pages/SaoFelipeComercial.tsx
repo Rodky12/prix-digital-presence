@@ -31,7 +31,7 @@ const SaoFelipeComercial = () => {
           {/* Logo centralizado */}
           <div className="flex justify-center mb-16">
             <img 
-              src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
+              src="/lovable-uploads/0fe52703-72b9-4ab3-bfd4-79a448bc659b.png" 
               alt="São Felipe Comercial" 
               className="w-auto h-24"
             />
@@ -96,7 +96,7 @@ const SaoFelipeComercial = () => {
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
                     <img 
-                      src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
+                      src="/lovable-uploads/0fe52703-72b9-4ab3-bfd4-79a448bc659b.png" 
                       alt="São Felipe Comercial" 
                       className="w-full h-auto mb-6"
                     />
