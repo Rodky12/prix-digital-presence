@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
@@ -6,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const Hero = () => {
   return (
     <section id="home" className="relative py-32 md:py-40 bg-no-repeat bg-cover bg-center" 
-      style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=1920&q=80")'}}>
+      style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/0bd10c8e-5d0f-4885-8015-fcc13a4708a3.png")'}}>
       <div className="container">
         <div className="flex flex-col items-center justify-center">
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
