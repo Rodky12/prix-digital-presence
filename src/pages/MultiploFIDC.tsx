@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -89,7 +90,7 @@ const MultiploFIDC = () => {
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
                     <img 
-                      src="/lovable-uploads/ea7e2e3e-7ff9-4a98-872e-64cfe6b89e87.png" 
+                      src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
                       alt="Múltiplo FIDC" 
                       className="w-full h-auto mb-6"
                     />
