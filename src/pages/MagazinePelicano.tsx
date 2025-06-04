@@ -33,7 +33,7 @@ const MagazinePelicano = () => {
             <img 
               src="/lovable-uploads/d2e93879-9fd9-4617-a889-5c13c9f23f44.png" 
               alt="Magazine Pelicano" 
-              className="w-auto h-28"
+              className="w-auto h-24"
             />
           </div>
           
