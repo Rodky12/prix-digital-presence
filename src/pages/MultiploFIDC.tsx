@@ -31,7 +31,7 @@ const MultiploFIDC = () => {
           {/* Logo centralizado */}
           <div className="flex justify-center mb-16">
             <img 
-              src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
+              src="/lovable-uploads/dacdcd05-1479-4e15-9ed0-de3c875a776a.png" 
               alt="Múltiplo FIDC" 
               className="w-auto h-24"
             />
@@ -90,7 +90,7 @@ const MultiploFIDC = () => {
                   <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform rotate-6"></div>
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
                     <img 
-                      src="/lovable-uploads/772002df-dce1-4ca8-bfd4-0f29002148b6.png" 
+                      src="/lovable-uploads/dacdcd05-1479-4e15-9ed0-de3c875a776a.png" 
                       alt="Múltiplo FIDC" 
                       className="w-full h-auto mb-6"
                     />
