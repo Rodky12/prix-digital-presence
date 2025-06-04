@@ -11,6 +11,16 @@ const Footer = () => {
     }
   };
 
+  const handleGrupoPrixEmpresasClick = () => {
+    // Se já estamos na página inicial, apenas faz scroll
+    if (window.location.pathname === '/') {
+      scrollToSection('history');
+    } else {
+      // Se não estamos na página inicial, navega e depois faz scroll
+      window.location.href = '/#history';
+    }
+  };
+
   return (
     <footer className="bg-prix-blue text-white py-12">
       <div className="container">
@@ -36,7 +46,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <button 
-                  onClick={() => scrollToSection('history')}
+                  onClick={handleGrupoPrixEmpresasClick}
                   className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                 >
                   Grupo Prix - Empresas

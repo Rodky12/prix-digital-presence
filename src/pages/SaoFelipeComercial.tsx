@@ -31,7 +31,7 @@ const SaoFelipeComercial = () => {
           {/* Logo centralizado */}
           <div className="flex justify-center mb-16">
             <img 
-              src="/lovable-uploads/d6d89c29-3bf1-4d4d-9df0-5d5c09c0aec6.png" 
+              src="/lovable-uploads/ee847d6d-b1d0-4474-bc1d-b2e7376612c7.png" 
               alt="São Felipe Comercial" 
               className="w-auto h-24"
             />
