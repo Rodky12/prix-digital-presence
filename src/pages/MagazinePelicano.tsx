@@ -31,7 +31,7 @@ const MagazinePelicano = () => {
           {/* Logo centralizado */}
           <div className="flex justify-center mb-16">
             <img 
-              src="/lovable-uploads/d2e93879-9fd9-4617-a889-5c13c9f23f44.png" 
+              src="/lovable-uploads/54296650-8e83-42c3-bdbc-ea91ae027e86.png" 
               alt="Magazine Pelicano" 
               className="w-auto h-24"
             />
