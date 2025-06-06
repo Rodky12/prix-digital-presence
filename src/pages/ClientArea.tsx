@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -21,9 +20,9 @@ const ClientArea = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-32 bg-gray-50 min-h-[80vh]">
           <div className="container">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-16">
               <div className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 text-center flex flex-col">
                 <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg 
