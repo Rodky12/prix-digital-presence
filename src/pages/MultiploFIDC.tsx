@@ -70,7 +70,7 @@ const MultiploFIDC = () => {
               <img 
                 src="/lovable-uploads/30c5c984-1667-42fa-b567-592835414778.png" 
                 alt="QI Tech" 
-                className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                className="h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
