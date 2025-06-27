@@ -45,9 +45,9 @@ const PrivacyPolicy = () => {
                         Coletamos informações pessoais que você nos fornece diretamente através de:
                       </p>
                       <ul className="list-disc list-inside text-prix-gray-dark space-y-1">
-                        <li><strong>Formulário de Contato:</strong> Nome completo, endereço de e-mail, número de telefone e mensagem</li>
-                        <li><strong>Área do Cliente:</strong> Dados de acesso aos sistemas e informações comerciais</li>
-                        <li><strong>Comunicações diretas:</strong> E-mails, telefonemas e outras formas de contato</li>
+                        <li>Formulário de Contato: Nome completo, endereço de e-mail, número de telefone e mensagem</li>
+                        <li>Área do Cliente: Dados de acesso aos sistemas e informações comerciais</li>
+                        <li>Comunicações diretas: E-mails, telefonemas e outras formas de contato</li>
                       </ul>
                     </div>
 
@@ -83,12 +83,12 @@ const PrivacyPolicy = () => {
                     Utilizamos suas informações pessoais para as seguintes finalidades:
                   </p>
                   <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                    <li><strong>Atendimento ao cliente:</strong> Responder às suas solicitações enviadas pelo formulário de contato</li>
-                    <li><strong>Comunicação comercial:</strong> Enviar informações sobre nossos produtos e serviços, caso solicitado</li>
-                    <li><strong>Prestação de serviços:</strong> Fornecer acesso aos sistemas da área do cliente</li>
-                    <li><strong>Melhorias do site:</strong> Analisar a navegação para aprimorar a experiência do usuário</li>
-                    <li><strong>Cumprimento legal:</strong> Atender obrigações legais e regulamentares do setor financeiro</li>
-                    <li><strong>Segurança:</strong> Prevenir fraudes e proteger nossos sistemas</li>
+                    <li>Atendimento ao cliente: Responder às suas solicitações enviadas pelo formulário de contato</li>
+                    <li>Comunicação comercial: Enviar informações sobre nossos produtos e serviços, caso solicitado</li>
+                    <li>Prestação de serviços: Fornecer acesso aos sistemas da área do cliente</li>
+                    <li>Melhorias do site: Analisar a navegação para aprimorar a experiência do usuário</li>
+                    <li>Cumprimento legal: Atender obrigações legais e regulamentares do setor financeiro</li>
+                    <li>Segurança: Prevenir fraudes e proteger nossos sistemas</li>
                   </ul>
                 </section>
 
@@ -100,10 +100,10 @@ const PrivacyPolicy = () => {
                     O tratamento de seus dados pessoais é fundamentado nas seguintes bases legais:
                   </p>
                   <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                    <li><strong>Consentimento:</strong> Para comunicações comerciais e resposta ao formulário de contato</li>
-                    <li><strong>Interesse legítimo:</strong> Para melhorias do site e análise de navegação</li>
-                    <li><strong>Cumprimento de obrigação legal:</strong> Para atender exigências do Banco Central e CVM</li>
-                    <li><strong>Execução de contrato:</strong> Para prestação de serviços aos clientes</li>
+                    <li>Consentimento: Para comunicações comerciais e resposta ao formulário de contato</li>
+                    <li>Interesse legítimo: Para melhorias do site e análise de navegação</li>
+                    <li>Cumprimento de obrigação legal: Para atender exigências do Banco Central e CVM</li>
+                    <li>Execução de contrato: Para prestação de serviços aos clientes</li>
                   </ul>
                 </section>
 
@@ -132,10 +132,10 @@ const PrivacyPolicy = () => {
                       Mantemos seus dados pessoais pelo período necessário para cumprir as finalidades descritas nesta política:
                     </p>
                     <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                      <li><strong>Dados do formulário de contato</strong></li>
-                      <li><strong>Dados de navegação</strong></li>
-                      <li><strong>Dados de clientes:</strong> Conforme exigências legais do setor financeiro</li>
-                      <li><strong>Cookies técnicos:</strong> Até o fechamento da sessão do navegador</li>
+                      <li>Dados do formulário de contato</li>
+                      <li>Dados de navegação</li>
+                      <li>Dados de clientes: Conforme exigências legais do setor financeiro</li>
+                      <li>Cookies técnicos: Até o fechamento da sessão do navegador</li>
                     </ul>
                     <p className="text-prix-gray-dark mt-4">
                       Após esses períodos, os dados serão anonimizados ou excluídos, salvo quando a manutenção for exigida por lei.
@@ -152,9 +152,9 @@ const PrivacyPolicy = () => {
                       Caso necessário utilizamos cookies e tecnologias similares para melhorar sua experiência em nosso site:
                     </p>
                     <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                      <li><strong>Cookies essenciais:</strong> Necessários para o funcionamento básico do site</li>
-                      <li><strong>Cookies de preferências:</strong> Lembram suas configurações e escolhas</li>
-                      <li><strong>Cookies analíticos:</strong> Nos ajudam a entender como você usa o site</li>
+                      <li>Cookies essenciais: Necessários para o funcionamento básico do site</li>
+                      <li>Cookies de preferências: Lembram suas configurações e escolhas</li>
+                      <li>Cookies analíticos: Nos ajudam a entender como você usa o site</li>
                     </ul>
                     <p className="text-prix-gray-dark">
                       Você pode gerenciar suas preferências de cookies através das configurações do seu navegador. Note que desabilitar alguns cookies pode afetar a funcionalidade do site.
@@ -185,14 +185,14 @@ const PrivacyPolicy = () => {
                     De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:
                   </p>
                   <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                    <li><strong>Confirmação:</strong> Saber se tratamos seus dados pessoais</li>
-                    <li><strong>Acesso:</strong> Obter uma cópia dos seus dados pessoais</li>
-                    <li><strong>Correção:</strong> Solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
-                    <li><strong>Anonimização ou bloqueio:</strong> Solicitar a anonimização ou bloqueio de dados desnecessários</li>
-                    <li><strong>Eliminação:</strong> Solicitar a exclusão de dados tratados com seu consentimento</li>
-                    <li><strong>Portabilidade:</strong> Solicitar a portabilidade dos dados para outro fornecedor</li>
-                    <li><strong>Informação:</strong> Obter informações sobre o compartilhamento de dados</li>
-                    <li><strong>Revogação:</strong> Revogar o consentimento para o tratamento de dados</li>
+                    <li>Confirmação: Saber se tratamos seus dados pessoais</li>
+                    <li>Acesso: Obter uma cópia dos seus dados pessoais</li>
+                    <li>Correção: Solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
+                    <li>Anonimização ou bloqueio: Solicitar a anonimização ou bloqueio de dados desnecessários</li>
+                    <li>Eliminação: Solicitar a exclusão de dados tratados com seu consentimento</li>
+                    <li>Portabilidade: Solicitar a portabilidade dos dados para outro fornecedor</li>
+                    <li>Informação: Obter informações sobre o compartilhamento de dados</li>
+                    <li>Revogação: Revogar o consentimento para o tratamento de dados</li>
                   </ul>
                   <p className="text-prix-gray-dark mt-4">
                     Para exercer qualquer um desses direitos, entre em contato conosco através dos canais informados.
@@ -219,12 +219,12 @@ const PrivacyPolicy = () => {
                 <Separator />
 
                 <section>
-                  <h2 className="font-montserrat font-bold text-2xl text-prix-blue mb-4">10. Contato e Encarregado de Dados</h2>
+                  <h2 className="font-montserrat font-bold text-2xl text-prix-blue mb-4">10. Contato</h2>
                   <p className="text-prix-gray-dark mb-4">
                     Para questões sobre esta Política de Privacidade, exercício de direitos ou dúvidas sobre o tratamento de dados, entre em contato conosco:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                    <p className="text-prix-gray-dark"><strong>Grupo Prix - Encarregado de Dados (DPO)</strong></p>
+                    <p className="text-prix-gray-dark">Grupo Prix</p>
                     <p className="text-prix-gray-dark"><strong>E-mail:</strong> contato@grupoprix.com.br</p>
                     <p className="text-prix-gray-dark"><strong>Telefone:</strong> (11) 3411-1400</p>
                     <p className="text-prix-gray-dark"><strong>WhatsApp:</strong> (11) 99611-2990</p>
