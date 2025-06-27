@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -22,7 +23,7 @@ const ClientArea = () => {
 
         <section className="py-32 bg-gray-50 min-h-[80vh]">
           <div className="container">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-16">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
               <div className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 text-center flex flex-col">
                 <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg 
@@ -114,33 +115,6 @@ const ClientArea = () => {
                     onClick={() => window.open('https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfIniciaEmiteBoleto.jsp', '_blank')}
                   >
                     Emitir Boleto
-                  </Button>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 text-center flex flex-col">
-                <div className="w-16 h-16 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <svg 
-                    className="text-prix-blue w-8 h-8"
-                    width="24" 
-                    height="24" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
-                  >
-                    <path d="M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 0 1 9.288 0M15 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM7 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">Help Desk</h3>
-                <p className="text-prix-gray-dark mb-6">Acesso remoto para soluções de TI.</p>
-                <div className="mt-auto">
-                  <Button 
-                    className="bg-prix-blue hover:bg-opacity-90 w-full"
-                  >
-                    Acesso Remoto
                   </Button>
                 </div>
               </div>
