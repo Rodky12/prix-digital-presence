@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
                   O Grupo Prix está comprometido em proteger a privacidade e segurança das informações pessoais de nossos usuários, clientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos suas informações quando você visita nosso site, utiliza nossos serviços ou interage conosco.
                 </p>
                 <p className="text-prix-gray-dark text-sm">
-                  Última atualização: {new Date().toLocaleDateString('pt-BR')}
+                  Última atualização: 06/06/2025
                 </p>
               </div>
 
@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
                     <div>
                       <h3 className="font-semibold text-lg text-prix-blue mb-2">1.2 Informações Coletadas Automaticamente</h3>
                       <p className="text-prix-gray-dark mb-2">
-                        Quando você navega em nosso site, coletamos automaticamente:
+                        Quando você navega em nosso site, é coletado automaticamente:
                       </p>
                       <ul className="list-disc list-inside text-prix-gray-dark space-y-1">
                         <li>Endereço IP e localização aproximada</li>
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
                   </p>
                   <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
                     <li><strong>Atendimento ao cliente:</strong> Responder às suas solicitações enviadas pelo formulário de contato</li>
-                    <li><strong>Comunicação comercial:</strong> Enviar informações sobre nossos produtos e serviços</li>
+                    <li><strong>Comunicação comercial:</strong> Enviar informações sobre nossos produtos e serviços, caso solicitado</li>
                     <li><strong>Prestação de serviços:</strong> Fornecer acesso aos sistemas da área do cliente</li>
                     <li><strong>Melhorias do site:</strong> Analisar a navegação para aprimorar a experiência do usuário</li>
                     <li><strong>Cumprimento legal:</strong> Atender obrigações legais e regulamentares do setor financeiro</li>
@@ -132,8 +132,8 @@ const PrivacyPolicy = () => {
                       Mantemos seus dados pessoais pelo período necessário para cumprir as finalidades descritas nesta política:
                     </p>
                     <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
-                      <li><strong>Dados do formulário de contato:</strong> Por até 5 anos após o último contato</li>
-                      <li><strong>Dados de navegação:</strong> Por até 6 meses para análises estatísticas</li>
+                      <li><strong>Dados do formulário de contato</strong></li>
+                      <li><strong>Dados de navegação</strong></li>
                       <li><strong>Dados de clientes:</strong> Conforme exigências legais do setor financeiro</li>
                       <li><strong>Cookies técnicos:</strong> Até o fechamento da sessão do navegador</li>
                     </ul>
@@ -149,13 +149,12 @@ const PrivacyPolicy = () => {
                   <h2 className="font-montserrat font-bold text-2xl text-prix-blue mb-4">6. Cookies e Tecnologias Similares</h2>
                   <div className="space-y-4">
                     <p className="text-prix-gray-dark">
-                      Utilizamos cookies e tecnologias similares para melhorar sua experiência em nosso site:
+                      Caso necessário utilizamos cookies e tecnologias similares para melhorar sua experiência em nosso site:
                     </p>
                     <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
                       <li><strong>Cookies essenciais:</strong> Necessários para o funcionamento básico do site</li>
                       <li><strong>Cookies de preferências:</strong> Lembram suas configurações e escolhas</li>
                       <li><strong>Cookies analíticos:</strong> Nos ajudam a entender como você usa o site</li>
-                      <li><strong>Cookies de marketing:</strong> Personalizam conteúdo e anúncios relevantes</li>
                     </ul>
                     <p className="text-prix-gray-dark">
                       Você pode gerenciar suas preferências de cookies através das configurações do seu navegador. Note que desabilitar alguns cookies pode afetar a funcionalidade do site.
@@ -174,9 +173,7 @@ const PrivacyPolicy = () => {
                     <li>Criptografia de dados sensíveis em trânsito e em repouso</li>
                     <li>Controles de acesso baseados em funções e necessidade</li>
                     <li>Monitoramento contínuo de atividades suspeitas</li>
-                    <li>Backups regulares e planos de recuperação de desastres</li>
                     <li>Treinamento regular da equipe sobre segurança da informação</li>
-                    <li>Auditorias periódicas de segurança por terceiros especializados</li>
                   </ul>
                 </section>
 
@@ -198,7 +195,7 @@ const PrivacyPolicy = () => {
                     <li><strong>Revogação:</strong> Revogar o consentimento para o tratamento de dados</li>
                   </ul>
                   <p className="text-prix-gray-dark mt-4">
-                    Para exercer qualquer um desses direitos, entre em contato conosco através dos canais informados na seção "Contato". Responderemos sua solicitação em até 15 dias úteis.
+                    Para exercer qualquer um desses direitos, entre em contato conosco através dos canais informados.
                   </p>
                 </section>
 
@@ -207,7 +204,7 @@ const PrivacyPolicy = () => {
                 <section>
                   <h2 className="font-montserrat font-bold text-2xl text-prix-blue mb-4">9. Alterações na Política</h2>
                   <p className="text-prix-gray-dark mb-4">
-                    Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou na legislação aplicável. Notificaremos sobre alterações significativas através de:
+                    Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças em nossas práticas ou na legislação aplicável. Caso necessário notificaremos sobre alterações significativas através de:
                   </p>
                   <ul className="list-disc list-inside text-prix-gray-dark space-y-2">
                     <li>Aviso destacado em nosso site</li>
@@ -234,9 +231,6 @@ const PrivacyPolicy = () => {
                     <p className="text-prix-gray-dark"><strong>Endereço:</strong> Avenida Paulista, 460 - 13º Andar, Bela Vista - São Paulo - SP, CEP 01310-904</p>
                     <p className="text-prix-gray-dark"><strong>Horário de atendimento:</strong> Segunda a quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
                   </div>
-                  <p className="text-prix-gray-dark mt-4">
-                    Caso não fique satisfeito com nossa resposta, você também pode registrar uma reclamação junto à Autoridade Nacional de Proteção de Dados (ANPD).
-                  </p>
                 </section>
               </div>
             </div>
