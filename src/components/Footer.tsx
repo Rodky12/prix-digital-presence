@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   const handleGrupoPrixEmpresasClick = () => {
-    // Se já estamos na página inicial, apenas faz scroll
+    // Se já estamos na página inicial, apenas faz scroll para a seção history
     if (window.location.pathname === '/') {
       scrollToSection('history');
     } else {
