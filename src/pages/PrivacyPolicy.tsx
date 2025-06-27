@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -224,12 +223,11 @@ const PrivacyPolicy = () => {
                     Para questões sobre esta Política de Privacidade, exercício de direitos ou dúvidas sobre o tratamento de dados, entre em contato conosco:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                    <p className="text-prix-gray-dark">Grupo Prix</p>
-                    <p className="text-prix-gray-dark"><strong>E-mail:</strong> contato@grupoprix.com.br</p>
-                    <p className="text-prix-gray-dark"><strong>Telefone:</strong> (11) 3411-1400</p>
-                    <p className="text-prix-gray-dark"><strong>WhatsApp:</strong> (11) 99611-2990</p>
-                    <p className="text-prix-gray-dark"><strong>Endereço:</strong> Avenida Paulista, 460 - 13º Andar, Bela Vista - São Paulo - SP, CEP 01310-904</p>
-                    <p className="text-prix-gray-dark"><strong>Horário de atendimento:</strong> Segunda a quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
+                    <p className="text-prix-gray-dark">E-mail: contato@grupoprix.com.br</p>
+                    <p className="text-prix-gray-dark">Telefone: (11) 3411-1400</p>
+                    <p className="text-prix-gray-dark">WhatsApp: (11) 99611-2990</p>
+                    <p className="text-prix-gray-dark">Endereço: Avenida Paulista, 460 - 13º Andar, Bela Vista - São Paulo - SP, CEP 01310-904</p>
+                    <p className="text-prix-gray-dark">Horário de atendimento: Segunda a quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
                   </div>
                 </section>
               </div>
