@@ -28,8 +28,8 @@ const Hero = () => {
 
       {/* Fallback Background Image (caso o vídeo não carregue) */}
       <div 
-        className="absolute inset-0 bg-no-repeat bg-contain bg-center md:bg-cover"
-        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/e2e434c5-ef01-4e0b-8009-d5ea3fe27f41.png")'}}
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/0bd10c8e-5d0f-4885-8015-fcc13a4708a3.png")'}}
       ></div>
 
       {/* Content */}
