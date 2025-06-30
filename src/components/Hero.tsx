@@ -1,12 +1,36 @@
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative py-32 md:py-40 bg-no-repeat bg-cover bg-center" 
-      style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/0bd10c8e-5d0f-4885-8015-fcc13a4708a3.png")'}}>
-      <div className="container">
+    <section id="home" className="relative py-32 md:py-40">
+      {/* Video Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          {/* Adicione o caminho do seu vídeo aqui */}
+          <source src="/lovable-uploads/your-video.mp4" type="video/mp4" />
+          {/* Fallback para navegadores que não suportam vídeo */}
+        </video>
+        {/* Overlay escuro para melhor legibilidade do texto */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      </div>
+
+      {/* Fallback Background Image (caso o vídeo não carregue) */}
+      <div 
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center"
+        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/0bd10c8e-5d0f-4885-8015-fcc13a4708a3.png")'}}
+      ></div>
+
+      {/* Content */}
+      <div className="container relative z-10">
         <div className="flex flex-col items-center justify-center">
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
             <div className="mb-8 flex justify-center">
