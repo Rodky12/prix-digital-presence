@@ -115,6 +115,29 @@ const MultiploFIDC = () => {
             </p>
           </div>
 
+          {/* Nossos Produtos */}
+          <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossos Produtos</h2>
+            <p className="text-prix-gray-dark mb-6">
+              O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {products.map((product, index) => (
+                <div 
+                  key={index}
+                  className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100"
+                >
+                  <div className="w-14 h-14 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
+                    {product.icon}
+                  </div>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">{product.title}</h3>
+                  <p className="text-prix-gray-dark">{product.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Selos de Certificação */}
           <div className="max-w-3xl mx-auto mb-16">
             <div className="flex justify-center items-center gap-8 md:gap-12">
@@ -133,32 +156,6 @@ const MultiploFIDC = () => {
                 alt="QI Tech" 
                 className="h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
-            </div>
-          </div>
-
-          {/* Nossos Produtos */}
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl font-montserrat font-bold text-prix-blue mb-4">Nossos Produtos</h2>
-              <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
-              <p className="text-prix-gray-dark max-w-2xl mx-auto">
-                O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {products.map((product, index) => (
-                <div 
-                  key={index}
-                  className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100"
-                >
-                  <div className="w-14 h-14 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
-                    {product.icon}
-                  </div>
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">{product.title}</h3>
-                  <p className="text-prix-gray-dark">{product.description}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
