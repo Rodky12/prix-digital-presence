@@ -14,10 +14,13 @@ const Hero = () => {
           muted
           loop
           playsInline
+          preload="metadata"
+          onError={(e) => {
+            console.log('Video failed to load, falling back to background image');
+            e.currentTarget.style.display = 'none';
+          }}
         >
-          {/* Adicione o caminho do seu vídeo aqui */}
-          <source src="/lovable-uploads/your-video.mp4" type="video/mp4" />
-          {/* Fallback para navegadores que não suportam vídeo */}
+          <source src="https://drive.google.com/uc?export=download&id=1wQn6AK2BSqnfIvvXyfdnZKeab-ALPDhF" type="video/mp4" />
         </video>
         {/* Overlay escuro para melhor legibilidade do texto */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
