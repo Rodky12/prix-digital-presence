@@ -5,6 +5,13 @@ import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { 
+  Banknote, 
+  FileText, 
+  HandCoins, 
+  ShieldCheck,
+  CircleDollarSign
+} from 'lucide-react';
 
 const MultiploFIDC = () => {
   const navigate = useNavigate();
@@ -13,6 +20,60 @@ const MultiploFIDC = () => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
   }, []);
+
+  // Custom Cheque Icon
+  const ChequeIcon = () => (
+    <svg 
+      width="24" 
+      height="24" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      className="text-prix-blue"
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <line x1="3" y1="10" x2="21" y2="10" />
+      <line x1="7" y1="15" x2="11" y2="15" />
+      <line x1="14" y1="15" x2="17" y2="15" />
+      <path d="M7 5v3" />
+    </svg>
+  );
+
+  const products = [
+    {
+      icon: <Banknote className="text-prix-blue w-6 h-6" />,
+      title: "Antecipação de Recebíveis",
+      description: "Antecipe seus recebimentos de vendas a prazo, melhorando seu fluxo de caixa e permitindo novos investimentos."
+    },
+    {
+      icon: <HandCoins className="text-prix-blue w-6 h-6" />,
+      title: "Fomento a Produção",
+      description: "Incentivo financeiro para impulsionar a produção empresarial, oferecendo recursos para aumentar a capacidade produtiva."
+    },
+    {
+      icon: <FileText className="text-prix-blue w-6 h-6" />,
+      title: "CCB e Nota Comercial",
+      description: "Operações financeiras estruturadas de médio e longo prazo."
+    },
+    {
+      icon: <CircleDollarSign className="text-prix-blue w-6 h-6" />,
+      title: "Capital de Giro",
+      description: "Financiamento para manter as operações diárias da empresa, como pagamento de fornecedores, folha de pagamento e despesas."
+    },
+    {
+      icon: <ChequeIcon />,
+      title: "Cheque Prix (Hot Money)",
+      description: "Crédito rápido e descomplicado para impulsionar seu negócio. Com condições sob medida, você acessa recursos com segurança e agilidade."
+    },
+    {
+      icon: <ShieldCheck className="text-prix-blue w-6 h-6" />,
+      title: "Conta Escrow",
+      description: "Utilizada para custodiar recursos, garantindo o cumprimento das condições acordadas entre as partes."
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -72,6 +133,32 @@ const MultiploFIDC = () => {
                 alt="QI Tech" 
                 className="h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
+            </div>
+          </div>
+
+          {/* Nossos Produtos */}
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl font-montserrat font-bold text-prix-blue mb-4">Nossos Produtos</h2>
+              <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
+              <p className="text-prix-gray-dark max-w-2xl mx-auto">
+                O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {products.map((product, index) => (
+                <div 
+                  key={index}
+                  className="bg-white rounded-lg shadow-sm p-6 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100"
+                >
+                  <div className="w-14 h-14 bg-prix-blue/10 rounded-full flex items-center justify-center mb-6">
+                    {product.icon}
+                  </div>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">{product.title}</h3>
+                  <p className="text-prix-gray-dark">{product.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
