@@ -141,21 +141,11 @@ const MultiploFIDC = () => {
           {/* Nossos Parceiros */}
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossos Parceiros</h2>
-            <div className="flex justify-center items-center gap-8 md:gap-12">
+            <div className="flex justify-center">
               <img 
-                src="/lovable-uploads/a37b96b7-20e6-45da-9d3c-d3a188ed8694.png" 
-                alt="Certifica" 
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
-              <img 
-                src="/lovable-uploads/31c388af-bad2-47d2-b5ad-06abb7ce8925.png" 
-                alt="ANBIMA" 
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
-              <img 
-                src="/lovable-uploads/30c5c984-1667-42fa-b567-592835414778.png" 
-                alt="QI Tech" 
-                className="h-20 w-auto opacity-80 hover:opacity-100 transition-opacity"
+                src="/lovable-uploads/427bec44-9ae3-469e-a11f-1412f2c98ea9.png" 
+                alt="Nossos Parceiros" 
+                className="w-full max-w-4xl h-auto"
               />
             </div>
           </div>
