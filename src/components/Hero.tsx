@@ -29,7 +29,7 @@ const Hero = () => {
       {/* Fallback Background Image (caso o vídeo não carregue) */}
       <div 
         className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/0bd10c8e-5d0f-4885-8015-fcc13a4708a3.png")'}}
+        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/c4c666ac-01cb-44dd-ae75-0e45a40d1ac8.png")'}}
       ></div>
 
       {/* Content */}
