@@ -56,7 +56,7 @@ const ProductCard = ({
         {icon}
       </div>
       <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">{title}</h3>
-      <p className="text-prix-gray-dark text-justify">{description}</p>
+      <p className="text-prix-gray-dark">{description}</p>
     </div>
   );
 };
@@ -173,7 +173,7 @@ const Products = () => {
           </div>
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossos Produtos</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
-          <p className="text-prix-gray-dark max-w-2xl mx-auto text-justify">
+          <p className="text-prix-gray-dark max-w-2xl mx-auto">
             O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
           </p>
         </div>
