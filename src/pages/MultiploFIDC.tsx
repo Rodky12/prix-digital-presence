@@ -138,8 +138,9 @@ const MultiploFIDC = () => {
             </div>
           </div>
 
-          {/* Selos de Certificação */}
+          {/* Nossos Parceiros */}
           <div className="max-w-3xl mx-auto mb-16">
+            <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossos Parceiros</h2>
             <div className="flex justify-center items-center gap-8 md:gap-12">
               <img 
                 src="/lovable-uploads/a37b96b7-20e6-45da-9d3c-d3a188ed8694.png" 
