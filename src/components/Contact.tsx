@@ -82,7 +82,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <p className="text-prix-gray-dark">
+                    <p className="text-prix-gray-dark text-justify">
                       Avenida Paulista, 460 - 13º Andar<br />
                       Bela Vista - São Paulo - SP<br />
                       CEP 01310-904

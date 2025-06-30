@@ -34,7 +34,7 @@ const History = () => {
         <div className="text-center mb-8">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Grupo Prix - Empresas</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
-          <p className="text-prix-gray-dark max-w-2xl mx-auto">
+          <p className="text-prix-gray-dark max-w-2xl mx-auto text-justify">
             Conheça nossas empresas, suas trajetórias e seus ramos de atuação.
           </p>
         </div>
@@ -53,10 +53,10 @@ const History = () => {
             </div>
             <div className="flex-grow flex flex-col">
               <div className="min-h-20 mb-4">
-                <p className="text-prix-gray-dark">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
+                <p className="text-prix-gray-dark text-justify">Fundado em 1971, o Magazine Pelicano foi pioneiro no comércio varejista de bancas de mercadorias e artigos de época.</p>
               </div>
               <div className="min-h-20 mb-6 flex-grow">
-                <p className="text-prix-gray-dark">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
+                <p className="text-prix-gray-dark text-justify">Revolucionou este mercado atingindo a marca de mais de 200 filiais e 3.000 colaboradores distribuídos por todo o Brasil.</p>
               </div>
               <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
@@ -84,10 +84,10 @@ const History = () => {
             </div>
             <div className="flex-grow flex flex-col">
               <div className="min-h-20 mb-4">
-                <p className="text-prix-gray-dark">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
+                <p className="text-prix-gray-dark text-justify">Com atuação nacional, desde 1995 a São Felipe Comercial é responsável pela gestão de um portfólio de imóveis próprios para locação.</p>
               </div>
               <div className="min-h-20 mb-6 flex-grow">
-                <p className="text-prix-gray-dark">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
+                <p className="text-prix-gray-dark text-justify">Incluindo shopping centers, centros comerciais, galpões logísticos, andares corporativos e lojas nos grandes centros de varejo das principais cidades brasileiras.</p>
               </div>
               <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">
@@ -115,10 +115,10 @@ const History = () => {
             </div>
             <div className="flex-grow flex flex-col">
               <div className="min-h-20 mb-4">
-                <p className="text-prix-gray-dark">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
+                <p className="text-prix-gray-dark text-justify">Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento.</p>
               </div>
               <div className="min-h-20 mb-6 flex-grow">
-                <p className="text-prix-gray-dark">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
+                <p className="text-prix-gray-dark text-justify">Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de Fundos de Recebíveis.</p>
               </div>
               <div className="flex items-center space-x-2 mt-auto">
                 <div className="inline-block px-3 py-1 bg-prix-blue/5 rounded-full text-prix-blue text-sm font-medium">

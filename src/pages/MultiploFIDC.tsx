@@ -101,15 +101,15 @@ const MultiploFIDC = () => {
           {/* Nossa História */}
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossa História</h2>
-            <p className="text-prix-gray-dark mb-4">
+            <p className="text-prix-gray-dark mb-4 text-justify">
               Com mais de 35 anos de experiência no Mercado Financeiro, iniciou as atividades de antecipação de recebíveis pelo Banko Fomento. 
               Em 2005 constituiu o Múltiplo FIDC, sendo pioneiro no segmento de FIDC (Fundo de Recebíveis)
             </p>
-            <p className="text-prix-gray-dark mb-4">
+            <p className="text-prix-gray-dark mb-4 text-justify">
               O Múltiplo FIDC foi uma evolução natural após anos de atuação no mercado financeiro, permitindo atender empresas 
               de Middle Market dos mais diversos segmentos com necessidade de capital de giro, antecipação de recebíveis e operações estruturadas de forma rápida e eficiente.
             </p>
-            <p className="text-prix-gray-dark">
+            <p className="text-prix-gray-dark text-justify">
               Ao longo dos anos, o Múltiplo FIDC consolidou sua posição no mercado como uma instituição sólida e eficaz,
               oferecendo soluções financeiras personalizadas e competitivas para seus clientes.
             </p>
@@ -118,7 +118,7 @@ const MultiploFIDC = () => {
           {/* Nossos Produtos */}
           <div className="max-w-3xl mx-auto mb-16">
             <h2 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Nossos Produtos</h2>
-            <p className="text-prix-gray-dark mb-6">
+            <p className="text-prix-gray-dark mb-6 text-justify">
               O Múltiplo FIDC oferece uma variedade de soluções de crédito para atender às necessidades específicas do seu negócio.
             </p>
 
@@ -132,7 +132,7 @@ const MultiploFIDC = () => {
                     {product.icon}
                   </div>
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-3">{product.title}</h3>
-                  <p className="text-prix-gray-dark">{product.description}</p>
+                  <p className="text-prix-gray-dark text-justify">{product.description}</p>
                 </div>
               ))}
             </div>
