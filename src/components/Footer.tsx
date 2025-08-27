@@ -39,7 +39,7 @@ const Footer = () => {
                 <Linkedin width="32" height="32" />
               </a>
               <a href="https://wa.me/5511996112990" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <MessageSquare width="32" height="32" />
+                <img src="/lovable-uploads/f5c6121c-5bb3-4cae-b17a-96c5fdefc722.png" alt="WhatsApp" width="32" height="32" />
               </a>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-8">
+            <div className="mt-32">
               <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
             </div>
           </div>
