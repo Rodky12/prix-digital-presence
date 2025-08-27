@@ -77,8 +77,8 @@ const Companies = () => {
         <div className="text-center mb-16 opacity-0 transform translate-y-10 transition-all duration-700 animate-on-scroll">
           <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-prix-blue mb-4">Nossas Empresas</h2>
           <div className="w-20 h-1 bg-prix-blue mx-auto mb-6"></div>
-          <p className="text-prix-gray-dark max-w-2xl mx-auto">
-            O Grupo Prix é formado por empresas que se destacam em seus respectivos segmentos, oferecendo soluções inovadoras e confiáveis para nossos clientes.
+          <p className="text-prix-gray-dark max-w-2xl mx-auto text-center">
+            Conheça nossas empresas, suas trajetórias e seus ramos de atuação.
           </p>
         </div>
 
