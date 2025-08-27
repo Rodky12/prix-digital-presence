@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -32,7 +32,7 @@ const Hero = () => {
       ></div>
 
       {/* Content */}
-      <div className="container relative z-10 min-h-screen flex items-center justify-center py-20">
+      <div className="container relative z-10 h-full flex items-center justify-center px-4">
         <div className="flex flex-col items-center justify-center w-full">
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
             <div className="mb-8 flex justify-center">
