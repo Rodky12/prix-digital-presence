@@ -27,9 +27,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <img 
-              src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
+              src="/lovable-uploads/21d22293-ab61-4a16-9b4d-dfe321cb8551.png" 
               alt="Grupo Prix" 
-              className="h-14 mb-4 filter brightness-0 invert"
+              className="h-14 mb-4"
             />
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/prixempresarial/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
@@ -37,6 +37,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/company/grupo-prix/?trk=top_nav_home" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Linkedin width="32" height="32" />
+              </a>
+              <a href="https://wa.me/5511996112990" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
+                <MessageSquare width="32" height="32" />
               </a>
             </div>
           </div>
@@ -66,7 +69,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-32">
+            <div className="mt-8">
               <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
             </div>
           </div>
