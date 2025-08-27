@@ -152,7 +152,7 @@ const Companies = () => {
                     <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
                     <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
                       <img 
-                        src="/lovable-uploads/d6d89c29-3bf1-4d4d-9df0-5d5c09c0aec6.png" 
+                        src="/lovable-uploads/c9c4aab3-1d92-438c-9151-7fdbe9c65781.png" 
                         alt="São Felipe Comercial" 
                         className="w-full h-auto mb-6"
                       />
