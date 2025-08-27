@@ -39,7 +39,7 @@ const Footer = () => {
                 <Linkedin width="32" height="32" />
               </a>
               <a href="https://wa.me/5511996112990" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
-                <img src="/lovable-uploads/f5c6121c-5bb3-4cae-b17a-96c5fdefc722.png" alt="WhatsApp" width="32" height="32" />
+                <MessageSquare width="32" height="32" />
               </a>
             </div>
           </div>
