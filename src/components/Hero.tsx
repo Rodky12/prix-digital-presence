@@ -37,9 +37,9 @@ const Hero = () => {
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
             <div className="mb-8 flex justify-center">
               <img 
-                src="/lovable-uploads/82dd5968-a35a-46ef-affc-9b22172a5db1.png" 
+                src="/lovable-uploads/21d22293-ab61-4a16-9b4d-dfe321cb8551.png" 
                 alt="Grupo Prix" 
-                className="h-28 filter brightness-0 invert"
+                className="h-28"
               />
             </div>
             <p className="text-lg md:text-xl mb-8 text-gray-100 text-left">
