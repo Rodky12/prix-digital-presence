@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative py-32 md:py-40">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -27,13 +27,13 @@ const Hero = () => {
 
       {/* Fallback Background Image (caso o vídeo não carregue) */}
       <div 
-        className="absolute inset-0 bg-no-repeat bg-cover bg-center"
-        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/6a2d315b-2ca3-43de-96c4-5eb281d40bc9.png")'}}
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/lovable-uploads/6a2d315b-2ca3-43de-96c4-5eb281d40bc9.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}
       ></div>
 
       {/* Content */}
-      <div className="container relative z-10">
-        <div className="flex flex-col items-center justify-center">
+      <div className="container relative z-10 min-h-screen flex items-center justify-center py-20">
+        <div className="flex flex-col items-center justify-center w-full">
           <div className="animate-fade-in text-white text-center max-w-3xl mx-auto">
             <div className="mb-8 flex justify-center">
               <img 
