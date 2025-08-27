@@ -42,16 +42,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-montserrat font-semibold text-white text-lg mb-4">Empresas</h3>
+            <button 
+              onClick={handleGrupoPrixEmpresasClick}
+              className="font-montserrat font-semibold text-white text-lg mb-4 hover:text-gray-300 transition-colors cursor-pointer block"
+            >
+              Grupo Prix - Empresas
+            </button>
             <ul className="space-y-3">
-              <li>
-                <button 
-                  onClick={handleGrupoPrixEmpresasClick}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
-                >
-                  Grupo Prix - Empresas
-                </button>
-              </li>
               <li>
                 <Link to="/multiplo-fidc" className="text-gray-300 hover:text-white transition-colors">
                   Múltiplo FIDC
@@ -69,15 +66,9 @@ const Footer = () => {
               </li>
             </ul>
 
-            <h3 className="font-montserrat font-semibold text-white text-lg mt-6 mb-4">Institucional</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="https://webmail.grupoprix.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Webmail</a>
-              </li>
-              <li>
-                <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
-              </li>
-            </ul>
+            <div className="mt-6">
+              <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
+            </div>
           </div>
           
           <div>
