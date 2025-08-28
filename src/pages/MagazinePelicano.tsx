@@ -22,7 +22,12 @@ const MagazinePelicano = () => {
         <div className="container">
           <Button 
             variant="ghost" 
-            onClick={() => navigate("/#history")} 
+            onClick={() => {
+              navigate("/");
+              setTimeout(() => {
+                document.getElementById('history')?.scrollIntoView({ behavior: 'smooth' });
+              }, 100);
+            }} 
             className="mb-8 text-prix-blue hover:bg-prix-blue/10"
           >
             <ArrowLeft className="mr-2 w-4 h-4" /> Voltar
