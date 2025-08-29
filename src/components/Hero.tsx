@@ -42,7 +42,7 @@ const Hero = () => {
                 className="h-28"
               />
             </div>
-            <p className="text-lg md:text-xl mb-8 text-gray-100 text-left">
+            <p className="text-lg md:text-xl mb-8 text-gray-100 text-center">
               Grupo empresarial que atua nos segmentos Imobiliário, de Shopping Centers e de Fundos  de  Recebíveis  (FIDC), com mais de  50 anos de experiência no mercado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
