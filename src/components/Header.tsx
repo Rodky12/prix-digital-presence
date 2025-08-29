@@ -61,7 +61,7 @@ const Header = () => {
                   to={link.to}
                   spy={true}
                   smooth={true}
-                  offset={-200}
+                  offset={-280}
                   duration={500}
                   className="font-montserrat text-sm font-medium cursor-pointer transition-colors hover:text-prix-blue text-prix-gray-dark"
                 >
@@ -112,7 +112,7 @@ const Header = () => {
                     to={link.to}
                     spy={true}
                     smooth={true}
-                    offset={-200}
+                    offset={-280}
                     duration={500}
                     onClick={() => setMobileMenuOpen(false)}
                     className="font-montserrat text-prix-gray-dark text-lg font-medium py-2 cursor-pointer transition-colors hover:text-prix-blue"
