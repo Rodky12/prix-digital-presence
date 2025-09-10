@@ -74,10 +74,11 @@ const History = () => {
           <Link to="/sao-felipe-comercial" className="block group">
             <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100 flex flex-col h-full cursor-pointer">
               <div className="flex items-start gap-4 mb-2">
-                <div className="flex items-center justify-center h-36">
+                <div className="flex items-center justify-center h-36 pt-6">
                   <img 
                     src="/lovable-uploads/3d3fc6cf-e024-4c2e-b941-72f29a5f6fb4.png" 
                     alt="São Felipe Comercial" 
+                    style={{ width: '161px', height: '85px' }}
                     className="object-contain"
                   />
                 </div>
