@@ -151,11 +151,6 @@ const Companies = () => {
                   <div className="relative">
                     <div className="absolute inset-0 bg-prix-blue/5 rounded-2xl transform -rotate-6"></div>
                     <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 p-8">
-                      <img 
-                        src="/lovable-uploads/7acbdf9c-c967-43a2-b029-f6ed8bf74b37.png" 
-                        alt="São Felipe Comercial" 
-                        className="w-full h-auto mb-6"
-                      />
                       <h4 className="font-montserrat font-semibold text-prix-blue text-lg mb-3">Administração de alto padrão</h4>
                       <p className="text-sm text-prix-gray-dark">
                         Gerenciamento eficiente de propriedades comerciais em localizações estratégicas para maximizar o retorno sobre o investimento.
