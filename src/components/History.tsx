@@ -75,12 +75,6 @@ const History = () => {
             <div className="bg-white rounded-lg shadow-sm p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-md border border-gray-100 delay-100 flex flex-col h-full cursor-pointer">
               <div className="flex items-start gap-4 mb-2">
                 <div className="flex items-center justify-center h-36">
-                  <img 
-                    src="/lovable-uploads/fd4e802f-7f62-413d-90dd-98e44d594460.png" 
-                    alt="São Felipe Comercial" 
-                    style={{ width: '171px', height: '70px' }}
-                    className="object-contain"
-                  />
                 </div>
               </div>
               <div className="flex-grow flex flex-col">
