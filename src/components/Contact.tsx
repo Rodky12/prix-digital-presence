@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="w-20 h-1 bg-prix-blue mx-auto"></div>
         </div>
 
-        <div ref={sectionRef} className="animate-on-scroll max-w-2xl mx-auto">
+        <div ref={sectionRef} className="animate-on-scroll">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <div className="h-48 w-full">
               <iframe
