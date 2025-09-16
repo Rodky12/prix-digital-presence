@@ -65,6 +65,7 @@ const Contact = () => {
 
                 {/* Contato */}
                 <div>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Dados para contato</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
