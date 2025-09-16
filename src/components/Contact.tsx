@@ -1,50 +1,9 @@
 
-import { useEffect, useRef, useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { MapPin, Phone, Mail, Calendar, MessageSquare } from 'lucide-react';
-import { toast } from '@/components/ui/use-toast';
+import { useEffect, useRef } from 'react';
+import { MapPin, Phone, Mail, Calendar } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { id, value } = e.target;
-    setFormData(prev => ({ ...prev, [id]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    
-    // Simulação de envio - aqui será implementada a integração com Microsoft 365/Exchange
-    try {
-      // TODO: Implementar integração com Microsoft 365/Exchange via Supabase
-      
-      toast({
-        title: "Mensagem recebida!",
-        description: "Sua mensagem foi recebida. Entre em contato conosco pelos outros meios disponíveis.",
-      });
-      
-      // Clear form
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    } catch (error) {
-      console.error("Erro:", error);
-      toast({
-        title: "Erro",
-        description: "Falha ao processar a mensagem. Tente novamente.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -75,131 +34,64 @@ const Contact = () => {
           <div className="w-20 h-1 bg-prix-blue mx-auto"></div>
         </div>
 
-        <div ref={sectionRef} className="animate-on-scroll grid md:grid-cols-2 gap-8 lg:gap-16">
-          <div>
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-48 w-full">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2493883324145!2d-46.647944!3d-23.5683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec2052c7f%3A0x589c13729fc02ecf!2sPrix%20Empresarial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Localização Prix Empresarial Ltda"
-                ></iframe>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <p className="text-prix-gray-dark">
-                      Avenida Paulista, 460 - 13º Andar<br />
-                      Bela Vista - São Paulo - SP<br />
-                      CEP 01310-904
-                    </p>
-                  </div>
-                  <div className="flex items-start">
-                    <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <p className="text-prix-gray-dark">
-                      (11) 3411-1400
-                    </p>
-                  </div>
-                  <div className="flex items-start">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-prix-blue mr-3 mt-1" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                    </svg>
-                    <p className="text-prix-gray-dark">
-                      <a href="https://wa.me/5511996112990" className="hover:text-prix-blue transition-colors">
-                        WhatsApp: (11) 99611-2990
-                      </a>
-                    </p>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <p className="text-prix-gray-dark">
-                      <a href="mailto:contato@grupoprix.com.br" className="hover:text-prix-blue transition-colors">
-                        contato@grupoprix.com.br
-                      </a>
-                    </p>
-                  </div>
-                  <div className="flex items-start">
-                    <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <div className="text-prix-gray-dark">
-                      <p className="font-medium">Horário de Expediente:</p>
-                      <p>Segunda à Quinta: 08h30 às 18h15</p>
-                      <p>Sexta: 08h30 às 17h30</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div ref={sectionRef} className="animate-on-scroll max-w-2xl mx-auto">
+          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div className="h-48 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2493883324145!2d-46.647944!3d-23.5683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec2052c7f%3A0x589c13729fc02ecf!2sPrix%20Empresarial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Prix Empresarial Ltda"
+              ></iframe>
             </div>
-          </div>
-
-          <div>
-            <div className="bg-prix-blue/5 p-6 rounded-lg border border-prix-blue/10">
-              <div className="mb-6">
-                <h3 className="text-xl font-montserrat font-semibold text-prix-blue">Fale Conosco</h3>
+            <div className="p-6">
+              <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                  <p className="text-prix-gray-dark">
+                    Avenida Paulista, 460 - 13º Andar<br />
+                    Bela Vista - São Paulo - SP<br />
+                    CEP 01310-904
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                  <p className="text-prix-gray-dark">
+                    (11) 3411-1400
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-prix-blue mr-3 mt-1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                  </svg>
+                  <p className="text-prix-gray-dark">
+                    <a href="https://wa.me/5511996112990" className="hover:text-prix-blue transition-colors">
+                      WhatsApp: (11) 99611-2990
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                  <p className="text-prix-gray-dark">
+                    <a href="mailto:contato@grupoprix.com.br" className="hover:text-prix-blue transition-colors">
+                      contato@grupoprix.com.br
+                    </a>
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                  <div className="text-prix-gray-dark">
+                    <p className="font-medium">Horário de Expediente:</p>
+                    <p>Segunda à Quinta: 08h30 às 18h15</p>
+                    <p>Sexta: 08h30 às 17h30</p>
+                  </div>
+                </div>
               </div>
-              
-              <form className="space-y-4" onSubmit={handleSubmit}>
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-prix-gray-dark mb-1">Nome</label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-prix-gray-dark mb-1">E-mail</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-prix-gray-dark mb-1">Telefone</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    placeholder="(00) 00000-0000"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-prix-gray-dark mb-1">Mensagem</label>
-                  <textarea
-                    id="message"
-                    rows={3}
-                    className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-prix-blue focus:border-transparent outline-none transition"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                  ></textarea>
-                </div>
-                <div className="mt-6">
-                  <Button 
-                    type="submit" 
-                    disabled={isLoading}
-                    className="w-full bg-prix-blue hover:bg-opacity-90 font-medium py-6 text-base disabled:opacity-50"
-                  >
-                    {isLoading ? 'Enviando...' : 'Enviar mensagem'}
-                  </Button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
