@@ -36,7 +36,7 @@ const Contact = () => {
 
         <div ref={sectionRef} className="animate-on-scroll">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <div className="h-80 w-full">
+            <div className="h-100 w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2493883324145!2d-46.647944!3d-23.5683894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bec2052c7f%3A0x589c13729fc02ecf!2sPrix%20Empresarial%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1714569967736!5m2!1spt-BR!2sbr"
                 width="100%"
