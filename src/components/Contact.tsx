@@ -49,9 +49,9 @@ const Contact = () => {
               ></iframe>
             </div>
             <div className="p-6">
-              <div className="flex flex-col md:flex-row md:justify-between gap-6">
-                {/* Endereço */}
-                <div className="flex-1">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                {/* Endereço - Primeira coluna */}
+                <div className="md:justify-self-start">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
                   <div className="flex items-start">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
@@ -63,8 +63,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Contato - Centralizado */}
-                <div className="flex-1 md:mx-6">
+                {/* Contato - Coluna central */}
+                <div className="md:justify-self-center">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Dados para Contato</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
@@ -94,8 +94,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Horário - Alinhado à direita */}
-                <div className="flex-1">
+                {/* Horário - Terceira coluna, alinhado à direita */}
+                <div className="md:justify-self-end">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Horário de Expediente</h3>
                   <div className="flex items-start">
                     <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
