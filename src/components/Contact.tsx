@@ -88,7 +88,7 @@ const Contact = () => {
                       </svg>
                       <p className="text-prix-gray-dark">
                         <a href="https://wa.me/551134111400" className="hover:text-prix-blue transition-colors">
-                          WhatsApp: (11) 3511-1400
+                          WhatsApp: (11) 3411-1400
                         </a>
                       </p>
                     </div>
