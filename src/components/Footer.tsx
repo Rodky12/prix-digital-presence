@@ -119,10 +119,20 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/10 text-center">
-          <p className="text-gray-400">
-            © {currentYear} Grupo Prix. Todos os direitos reservados.
-          </p>
+        <div className="pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-gray-400">
+              © {currentYear} Grupo Prix. Todos os direitos reservados.
+            </p>
+            <div className="flex flex-col items-center">
+              <h3 className="font-montserrat font-semibold text-white text-sm mb-2">Salve nosso Contato</h3>
+              <img 
+                src="/lovable-uploads/VCard-PrixEmpresarial.png" 
+                alt="QR Code Prix Empresarial" 
+                className="w-32 h-32 object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
