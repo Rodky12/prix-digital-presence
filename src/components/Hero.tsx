@@ -5,6 +5,12 @@ import { Link as ScrollLink } from 'react-scroll';
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
+      {/* Fallback Background Image */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/lovable-uploads/6a2d315b-2ca3-43de-96c4-5eb281d40bc9.png")', backgroundSize: 'cover', backgroundPosition: 'center'}}
+      ></div>
+
       {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
         <video
@@ -16,7 +22,10 @@ const Hero = () => {
           preload="metadata"
           onError={(e) => {
             console.log('Video failed to load, falling back to background image');
-            e.currentTarget.style.display = 'none';
+            const videoContainer = e.currentTarget.parentElement;
+            if (videoContainer) {
+              videoContainer.style.display = 'none';
+            }
           }}
         >
           <source src="https://drive.google.com/uc?export=download&id=1wQn6AK2BSqnfIvvXyfdnZKeab-ALPDhF" type="video/mp4" />
@@ -24,12 +33,6 @@ const Hero = () => {
         {/* Overlay escuro para melhor legibilidade do texto */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
-
-      {/* Fallback Background Image (caso o vídeo não carregue) */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/lovable-uploads/6a2d315b-2ca3-43de-96c4-5eb281d40bc9.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}
-      ></div>
 
       {/* Content */}
       <div className="container relative z-10 h-full flex items-center justify-center px-4">
