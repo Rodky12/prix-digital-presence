@@ -104,8 +104,8 @@ const Contact = () => {
                 </div>
 
                 {/* QR Code - Terceira coluna */}
-                <div className="md:justify-self-end">
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Salve nosso Contato</h3>
+                <div className="md:justify-self-end flex flex-col items-center">
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-1">Salve nosso Contato</h3>
                   <img 
                     src="/lovable-uploads/VCard-PrixEmpresarial.png" 
                     alt="QR Code Prix Empresarial" 
