@@ -49,7 +49,7 @@ const Contact = () => {
               ></iframe>
             </div>
             <div className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                 {/* Endereço e Horário - Primeira coluna */}
                 <div className="md:justify-self-start">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Endereço</h3>
@@ -100,8 +100,17 @@ const Contact = () => {
                         </a>
                       </p>
                     </div>
-                  </div>
                 </div>
+
+                {/* QR Code - Terceira coluna */}
+                <div className="md:justify-self-center flex flex-col items-center">
+                  <img 
+                    src="/lovable-uploads/VCard-PrixEmpresarial.png" 
+                    alt="QR Code Prix Empresarial" 
+                    className="w-48 h-48 object-contain"
+                  />
+                </div>
+              </div>
               </div>
             </div>
           </div>
