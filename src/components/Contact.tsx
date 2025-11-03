@@ -108,7 +108,7 @@ const Contact = () => {
                   <img 
                     src="/lovable-uploads/VCard-PrixEmpresarial.png" 
                     alt="QR Code Prix Empresarial" 
-                    className="w-40 h-40 object-contain"
+                    className="w-52 h-52 object-contain"
                   />
                 </div>
               </div>
