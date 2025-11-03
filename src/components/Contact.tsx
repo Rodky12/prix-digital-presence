@@ -53,7 +53,7 @@ const Contact = () => {
                 {/* Endereço e Horário - Primeira coluna */}
                 <div className="md:justify-self-start">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
-                  <div className="flex items-start mb-8">
+                  <div className="flex items-start mb-4">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       Avenida Paulista, 460 - 13º Andar<br />
