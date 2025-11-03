@@ -48,7 +48,16 @@ const ClientArea = () => {
                 <div className="mt-auto">
                   <Button 
                     className="bg-prix-blue hover:bg-opacity-90 w-full"
-                    onClick={() => window.open('https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfrInicia.jsp', '_blank')}
+                    onClick={() => {
+                      if (typeof window.gtag !== 'undefined') {
+                        window.gtag('event', 'click', {
+                          event_category: 'External Link',
+                          event_label: 'Acessar Sistema',
+                          value: 'https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfrInicia.jsp'
+                        });
+                      }
+                      window.open('https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfrInicia.jsp', '_blank');
+                    }}
                   >
                     Acessar Sistema
                   </Button>
@@ -80,7 +89,16 @@ const ClientArea = () => {
                 <div className="mt-auto">
                   <Button 
                     className="bg-prix-blue hover:bg-opacity-90 w-full"
-                    onClick={() => window.open('https://portal.qcertifica.com.br/Authentication/Login.aspx', '_blank')}
+                    onClick={() => {
+                      if (typeof window.gtag !== 'undefined') {
+                        window.gtag('event', 'click', {
+                          event_category: 'External Link',
+                          event_label: 'Assinar Contrato',
+                          value: 'https://portal.qcertifica.com.br/Authentication/Login.aspx'
+                        });
+                      }
+                      window.open('https://portal.qcertifica.com.br/Authentication/Login.aspx', '_blank');
+                    }}
                   >
                     Assinar Contrato
                   </Button>
@@ -112,7 +130,16 @@ const ClientArea = () => {
                 <div className="mt-auto">
                   <Button 
                     className="bg-prix-blue hover:bg-opacity-90 w-full"
-                    onClick={() => window.open('https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfIniciaEmiteBoleto.jsp', '_blank')}
+                    onClick={() => {
+                      if (typeof window.gtag !== 'undefined') {
+                        window.gtag('event', 'click', {
+                          event_category: 'External Link',
+                          event_label: 'Emitir Boleto',
+                          value: 'https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfIniciaEmiteBoleto.jsp'
+                        });
+                      }
+                      window.open('https://sistema.grupoprix.com.br:8083/netFactor/jsp/nfIniciaEmiteBoleto.jsp', '_blank');
+                    }}
                   >
                     Emitir Boleto
                   </Button>
