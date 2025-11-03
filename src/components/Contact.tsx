@@ -73,7 +73,7 @@ const Contact = () => {
                 </div>
 
                 {/* Dados para Contato - Segunda coluna */}
-                <div className="md:justify-self-center">
+                <div className="md:justify-self-end md:mr-8">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Dados para Contato</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
