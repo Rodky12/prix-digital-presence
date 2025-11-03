@@ -11,6 +11,7 @@ import MagazinePelicano from "./pages/MagazinePelicano";
 import SaoFelipeComercial from "./pages/SaoFelipeComercial";
 import MultiploFIDC from "./pages/MultiploFIDC";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GoogleAnalytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cliente" element={<ClientArea />} />
