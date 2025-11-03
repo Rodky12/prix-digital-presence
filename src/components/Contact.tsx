@@ -52,7 +52,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 {/* Endereço e Horário - Primeira coluna */}
                 <div className="md:justify-self-start">
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Endereço</h3>
                   <div className="flex items-start mb-4">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
@@ -62,7 +62,7 @@ const Contact = () => {
                     </p>
                   </div>
                   
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Horário de Expediente</h3>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Horário de Expediente</h3>
                   <div className="flex items-start">
                     <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <div className="text-prix-gray-dark">
@@ -74,7 +74,7 @@ const Contact = () => {
 
                 {/* Contato - Segunda coluna */}
                 <div className="md:justify-self-start">
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Dados para Contato</h3>
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-2">Dados para Contato</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Phone className="text-prix-blue mr-3 mt-1 w-5 h-5" />
