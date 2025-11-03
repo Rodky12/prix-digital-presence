@@ -31,7 +31,7 @@ const Footer = () => {
               alt="Grupo Prix" 
               className="h-14 mb-4"
             />
-            <div className="flex space-x-4 mb-8">
+            <div className="flex space-x-4">
               <a href="https://www.instagram.com/prixempresarial/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 <Instagram width="32" height="32" />
               </a>
@@ -45,12 +45,12 @@ const Footer = () => {
               </a>
             </div>
             
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col items-start mt-auto pt-8">
               <h3 className="font-montserrat font-semibold text-white text-sm mb-2">Salve nosso Contato</h3>
               <img 
                 src="/lovable-uploads/VCard-PrixEmpresarial.png" 
                 alt="QR Code Prix Empresarial" 
-                className="w-32 h-32 object-contain"
+                className="w-24 h-24 object-contain"
               />
             </div>
           </div>
