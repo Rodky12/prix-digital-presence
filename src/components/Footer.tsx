@@ -71,9 +71,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-8 flex flex-col items-start gap-4">
-              <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
-              
+            <div className="mt-8 flex items-start justify-between w-full gap-4">
               <div className="flex flex-col items-start">
                 <h3 className="font-montserrat font-semibold text-white text-sm mb-2">Salve nosso Contato</h3>
                 <img 
@@ -82,6 +80,8 @@ const Footer = () => {
                   className="w-32 h-32 object-contain"
                 />
               </div>
+              
+              <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
             </div>
           </div>
           
