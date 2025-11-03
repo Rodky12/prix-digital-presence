@@ -49,11 +49,11 @@ const Contact = () => {
               ></iframe>
             </div>
             <div className="p-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                {/* Endereço - Primeira coluna */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                {/* Endereço e Horário - Primeira coluna */}
                 <div className="md:justify-self-start">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Endereço</h3>
-                  <div className="flex items-start">
+                  <div className="flex items-start mb-8">
                     <MapPin className="text-prix-blue mr-3 mt-1 w-5 h-5" />
                     <p className="text-prix-gray-dark">
                       Avenida Paulista, 460 - 13º Andar<br />
@@ -61,10 +61,19 @@ const Contact = () => {
                       CEP 01310-904
                     </p>
                   </div>
+                  
+                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Horário de Expediente</h3>
+                  <div className="flex items-start">
+                    <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
+                    <div className="text-prix-gray-dark">
+                      <p>Segunda à Quinta: 08h30 às 18h15</p>
+                      <p>Sexta: 08h30 às 17h30</p>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Contato - Coluna central */}
-                <div className="md:justify-self-center">
+                {/* Contato - Segunda coluna */}
+                <div className="md:justify-self-start">
                   <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Dados para Contato</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
@@ -90,18 +99,6 @@ const Contact = () => {
                           contato@grupoprix.com.br
                         </a>
                       </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Horário - Terceira coluna, alinhado à direita */}
-                <div className="md:justify-self-end">
-                  <h3 className="text-xl font-montserrat font-semibold text-prix-blue mb-4">Horário de Expediente</h3>
-                  <div className="flex items-start">
-                    <Calendar className="text-prix-blue mr-3 mt-1 w-5 h-5" />
-                    <div className="text-prix-gray-dark">
-                      <p>Segunda à Quinta: 08h30 às 18h15</p>
-                      <p>Sexta: 08h30 às 17h30</p>
                     </div>
                   </div>
                 </div>
