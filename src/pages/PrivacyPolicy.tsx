@@ -223,7 +223,15 @@ const PrivacyPolicy = () => {
                     Para questões sobre esta Política de Privacidade, exercício de direitos ou dúvidas sobre o tratamento de dados, entre em contato conosco:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                    <p className="text-prix-gray-dark">E-mail: contato@grupoprix.com.br</p>
+                    <p className="text-prix-gray-dark">
+                      E-mail:{' '}
+                      <a 
+                        href="mailto:contato@grupoprix.com.br"
+                        className="hover:underline"
+                      >
+                        contato@grupoprix.com.br
+                      </a>
+                    </p>
                     <p className="text-prix-gray-dark">Telefone: (11) 3411-1400</p>
                     <p className="text-prix-gray-dark">
                       WhatsApp:{' '}
