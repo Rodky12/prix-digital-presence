@@ -225,7 +225,17 @@ const PrivacyPolicy = () => {
                   <div className="bg-gray-50 p-6 rounded-lg space-y-3">
                     <p className="text-prix-gray-dark">E-mail: contato@grupoprix.com.br</p>
                     <p className="text-prix-gray-dark">Telefone: (11) 3411-1400</p>
-                    <p className="text-prix-gray-dark">WhatsApp: (11) 99611-2990</p>
+                    <p className="text-prix-gray-dark">
+                      WhatsApp:{' '}
+                      <a 
+                        href="https://wa.me/551134111400" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        (11) 3411-1400
+                      </a>
+                    </p>
                     <p className="text-prix-gray-dark">Endereço: Avenida Paulista, 460 - 13º Andar, Bela Vista - São Paulo - SP, CEP 01310-904</p>
                     <p className="text-prix-gray-dark">Horário de atendimento: Segunda a quinta: 08h30 às 18h15 | Sexta: 08h30 às 17h30</p>
                   </div>
