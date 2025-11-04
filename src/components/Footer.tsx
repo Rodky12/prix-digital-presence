@@ -104,7 +104,12 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail className="text-gray-300 mr-3 shrink-0" size={20} />
-                <span className="text-gray-300">contato@grupoprix.com.br</span>
+                <a 
+                  href="mailto:contato@grupoprix.com.br"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  contato@grupoprix.com.br
+                </a>
               </li>
               <li className="flex">
                 <MapPin className="text-gray-300 mr-3 shrink-0" size={20} />
