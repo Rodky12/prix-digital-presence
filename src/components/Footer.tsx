@@ -50,7 +50,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/VCard-PrixEmpresarial_Branco-FundoTransparente.png" 
                 alt="QR Code Prix Empresarial" 
-                className="w-36 h-36 object-contain"
+                className="w-36 h-36 object-contain ml-4"
               />
             </div>
           </div>
