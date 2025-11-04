@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-col items-start mt-auto pt-12">
-              <h3 className="font-montserrat font-semibold text-white text-lg mb-2">Salve nosso Contato</h3>
+              <h3 className="font-montserrat font-semibold text-white text-lg mb-1">Salve nosso Contato</h3>
               <img 
                 src="/lovable-uploads/VCard-PrixEmpresarial_Branco-FundoTransparente.png" 
                 alt="QR Code Prix Empresarial" 
