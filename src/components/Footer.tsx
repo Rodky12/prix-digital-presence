@@ -48,9 +48,9 @@ const Footer = () => {
             <div className="flex flex-col items-start mt-auto pt-8">
               <h3 className="font-montserrat font-semibold text-white text-sm mb-2">Salve nosso Contato</h3>
               <img 
-                src="/lovable-uploads/VCard-PrixEmpresarial.png" 
+                src="/lovable-uploads/VCard-PrixEmpresarial_Branco-FundoTransparente.png" 
                 alt="QR Code Prix Empresarial" 
-                className="w-24 h-24 object-contain mix-blend-multiply"
+                className="w-24 h-24 object-contain"
               />
             </div>
           </div>
