@@ -80,7 +80,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <div className="mt-8">
+            <div className="mt-16">
               <Link to="/politica-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link>
             </div>
           </div>
